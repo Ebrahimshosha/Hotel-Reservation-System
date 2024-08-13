@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Configurations\" />
     <Folder Include="DTO\" />
     <Folder Include="Extentions\" />
     <Folder Include="Mediators\" />

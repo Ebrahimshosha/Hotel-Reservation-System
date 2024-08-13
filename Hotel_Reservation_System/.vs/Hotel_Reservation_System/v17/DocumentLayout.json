@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation s 2ystem\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation s 2ystem\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T21:13:34.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StoreContext.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\StoreContext.cs",
+              "RelativeDocumentMoniker": "Data\\StoreContext.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\StoreContext.cs",
+              "RelativeToolTip": "Data\\StoreContext.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAAB4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T21:10:26.58Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

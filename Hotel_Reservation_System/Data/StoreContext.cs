@@ -22,4 +22,11 @@ public class StoreContext : DbContext
             relationship.DeleteBehavior = DeleteBehavior.Restrict;
         }
     }
+    public DbSet<Room> Rooms { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<Role> Roles { get; set; }
+    public DbSet<Offer> Offers { get; set; }
+    public DbSet<FeedBack> FeedBacks { get; set; }
+    public DbSet<Payment> Payments { get; set; }
+    public DbSet<Reservation> Reservations { get; set; }
 }

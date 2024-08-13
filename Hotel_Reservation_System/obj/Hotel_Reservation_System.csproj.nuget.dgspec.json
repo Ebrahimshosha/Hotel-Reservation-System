@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System.csproj": {}
+    "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
   },
   "projects": {
-    "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System.csproj": {
+    "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System.csproj",
+        "projectUniqueName": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
         "projectName": "Hotel_Reservation_System",
-        "projectPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System.csproj",
+        "projectPath": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
         "packagesPath": "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\",
-        "outputPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\obj\\",
+        "outputPath": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ibrahim shosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
