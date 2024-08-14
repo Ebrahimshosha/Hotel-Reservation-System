@@ -1,8 +1,7 @@
 ﻿namespace Hotel_Reservation_System.Models;
 
-public enum Facilities: byte
+public class Facilities
 {
-    WiFi=1,
-    Telephone=2,
-    TV=4
+    public string Name { get; set; } = string.Empty;
+    public double price { get; set; } 
 }

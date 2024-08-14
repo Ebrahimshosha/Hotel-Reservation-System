@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\",
+  "WorkspaceRootPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation s 2ystem\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation s 2ystem\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\Migirations\\20240814114854_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migirations\\20240814114854_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "Title": "Room.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Models\\Room.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Room.cs",
+              "RelativeToolTip": "Models\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T21:13:34.323Z",
+              "WhenOpened": "2024-08-14T23:04:14.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StoreContext.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\StoreContext.cs",
-              "RelativeDocumentMoniker": "Data\\StoreContext.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation S 2ystem\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\StoreContext.cs",
-              "RelativeToolTip": "Data\\StoreContext.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAAB4AAAA4AAAA",
+              "Title": "20240814114854_initial.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\Migirations\\20240814114854_initial.cs",
+              "RelativeDocumentMoniker": "Data\\Migirations\\20240814114854_initial.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\Migirations\\20240814114854_initial.cs",
+              "RelativeToolTip": "Data\\Migirations\\20240814114854_initial.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T21:10:26.58Z",
+              "WhenOpened": "2024-08-14T11:48:55.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T11:51:41.936Z",
               "EditorCaption": ""
             }
           ]

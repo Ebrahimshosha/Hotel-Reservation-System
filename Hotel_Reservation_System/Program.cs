@@ -4,6 +4,7 @@ using Autofac.Extensions.DependencyInjection;
 using AutoMapper;
 using Hotel_Reservation_System.AutoFac;
 using Hotel_Reservation_System.Data;
+using Hotel_Reservation_System.Extentions;
 using Hotel_Reservation_System.Helpers;
 using Hotel_Reservation_System.Middlewares;
 using Microsoft.EntityFrameworkCore;
@@ -39,7 +40,7 @@ public class Program
 
         var app = builder.Build();
 
-        app.UseMiddleware<TransactionMiddleware>();
+        app.TransactionMiddleware();
 
         MapperHelper.Mapper = app.Services.GetService<IMapper>()!;
 

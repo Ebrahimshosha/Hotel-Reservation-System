@@ -12,6 +12,15 @@ public class RoomConfig : IEntityTypeConfiguration<Room>
 
                RoomStatus => (RoomType)Enum.Parse(typeof(RoomType), RoomStatus)
 
+               ); 
+
+        builder.Property(O => O.Facilities)
+               .HasConversion(
+
+               F => F.ToString(),
+
+               F => (Facilities)Enum.Parse(typeof(Facilities), F)
+
                );
     }
 }

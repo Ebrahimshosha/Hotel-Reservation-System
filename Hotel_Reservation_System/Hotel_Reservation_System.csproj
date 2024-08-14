@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="DTO\" />
-    <Folder Include="Extentions\" />
     <Folder Include="Mediators\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
