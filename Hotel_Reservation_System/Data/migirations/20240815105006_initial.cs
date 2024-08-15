@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Hotel_Reservation_System.Data.Migirations
+namespace Hotel_Reservation_System.Data.migirations
 {
     /// <inheritdoc />
     public partial class initial : Migration
@@ -51,7 +51,6 @@ namespace Hotel_Reservation_System.Data.Migirations
                     RoomType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Facilities = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Image_Url = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -70,18 +69,11 @@ namespace Hotel_Reservation_System.Data.Migirations
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Registered_at = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RoleId = table.Column<int>(type: "int", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Users_Roles_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Roles",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -190,11 +182,6 @@ namespace Hotel_Reservation_System.Data.Migirations
                 name: "IX_Reservations_UserId",
                 table: "Reservations",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Users_RoleId",
-                table: "Users",
-                column: "RoleId");
         }
 
         /// <inheritdoc />
@@ -210,6 +197,9 @@ namespace Hotel_Reservation_System.Data.Migirations
                 name: "Payments");
 
             migrationBuilder.DropTable(
+                name: "Roles");
+
+            migrationBuilder.DropTable(
                 name: "Reservations");
 
             migrationBuilder.DropTable(
@@ -217,9 +207,6 @@ namespace Hotel_Reservation_System.Data.Migirations
 
             migrationBuilder.DropTable(
                 name: "Users");
-
-            migrationBuilder.DropTable(
-                name: "Roles");
         }
     }
 }

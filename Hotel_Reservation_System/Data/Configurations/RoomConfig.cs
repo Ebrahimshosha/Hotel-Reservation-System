@@ -14,13 +14,5 @@ public class RoomConfig : IEntityTypeConfiguration<Room>
 
                ); 
 
-        builder.Property(O => O.Facilities)
-               .HasConversion(
-
-               F => F.ToString(),
-
-               F => (Facilities)Enum.Parse(typeof(Facilities), F)
-
-               );
     }
 }
