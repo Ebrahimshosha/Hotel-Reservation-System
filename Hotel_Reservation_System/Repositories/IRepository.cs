@@ -16,4 +16,6 @@ public interface IRepository<T> where T : BaseModel
     void Delete(T entity);
     void Delete(int id);
     T First(Expression<Func<T, bool>> predicate);
+    void SaveChanges();
+
 }

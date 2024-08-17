@@ -1,6 +1,4 @@
-﻿using AutoMapper.QueryableExtensions;
-using AutoMapper;
-
+﻿
 namespace Hotel_Reservation_System.Helpers;
 
 public static class MapperHelper

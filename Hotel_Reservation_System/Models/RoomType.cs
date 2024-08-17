@@ -8,5 +8,11 @@ public enum RoomType
     Single,
 
     [EnumMember(Value = "Double")]
-    Double
+    Double,
+
+    [EnumMember(Value = "Triple")]
+    Triple,
+
+    [EnumMember(Value = "Suite")]
+    Suite
 }

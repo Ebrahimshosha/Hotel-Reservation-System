@@ -7,6 +7,7 @@ using Hotel_Reservation_System.Data;
 using Hotel_Reservation_System.Extentions;
 using Hotel_Reservation_System.Helpers;
 using Hotel_Reservation_System.Middlewares;
+using Hotel_Reservation_System.Profiles.Roomprofiles;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
@@ -38,6 +39,8 @@ public class Program
         builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
             builder.RegisterModule(new AutoFacModule()));
 
+        builder.Services.AddAutoMapper(typeof(RoomProfile));
+
         var app = builder.Build();
 
         app.TransactionMiddleware();
@@ -52,7 +55,7 @@ public class Program
         }
 
         app.UseHttpsRedirection();
-
+        app.UseStaticFiles();
         app.UseAuthorization();
 
 

@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Hotel_Reservation_System.Data.migirations
+namespace Hotel_Reservation_System.Data.Migirations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240815105006_initial")]
+    [Migration("20240816054947_initial")]
     partial class initial
     {
         /// <inheritdoc />

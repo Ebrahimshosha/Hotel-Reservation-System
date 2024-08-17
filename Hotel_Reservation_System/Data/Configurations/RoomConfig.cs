@@ -12,7 +12,6 @@ public class RoomConfig : IEntityTypeConfiguration<Room>
 
                RoomStatus => (RoomType)Enum.Parse(typeof(RoomType), RoomStatus)
 
-               ); 
-
+               );
     }
 }

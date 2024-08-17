@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
+﻿
 using System.Reflection;
 
 namespace Hotel_Reservation_System.Data;
@@ -12,10 +9,12 @@ public class StoreContext : DbContext
     {
         ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         base.OnConfiguring(optionsBuilder);
     }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
@@ -27,11 +26,16 @@ public class StoreContext : DbContext
             relationship.DeleteBehavior = DeleteBehavior.Restrict;
         }
     }
-    public DbSet<Room> Rooms { get; set; }
-    public DbSet<User> Users { get; set; }
-    public DbSet<Role> Roles { get; set; }
-    public DbSet<Offer> Offers { get; set; }
+
+    public DbSet<Facility> Facilities { get; set; }
     public DbSet<FeedBack> FeedBacks { get; set; }
+    public DbSet<Offer> Offers { get; set; }
+    public DbSet<OfferRoom> offerRooms { get; set; }
     public DbSet<Payment> Payments { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
+    public DbSet<Role> Roles { get; set; }
+    public DbSet<Room> Rooms { get; set; }
+    public DbSet<RoomFacility> RoomFacilities { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<UserRole> UserRoles { get; set; }
 }
