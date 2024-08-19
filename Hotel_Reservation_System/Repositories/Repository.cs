@@ -20,21 +20,16 @@ public class Repository<T> : IRepository<T> where T : BaseModel
         return _context.Set<T>().Where(x => !x.IsDeleted).AsNoTracking();
     }
 
-    public IQueryable<T> GetAllWithInclude(string include)
-    {
-        return _context.Set<T>().Where(x => !x.IsDeleted).AsNoTracking().Include(include);
-    }
-
     public T GetByID(int id)
     {
-        return _context.Find<T>(id);
+        return _context.Set<T>().FirstOrDefault(x => x.Id == id && !x.IsDeleted)!;
     }
     public T GetWithTrackinByID(int id)
     {
         return _context.Set<T>()
             .Where(x => !x.IsDeleted && x.Id == id)
             .AsTracking()
-            .FirstOrDefault();
+            .FirstOrDefault()!;
     }
 
     public IQueryable<T> Get(Expression<Func<T, bool>> predicate)
@@ -44,7 +39,7 @@ public class Repository<T> : IRepository<T> where T : BaseModel
 
     public T First(Expression<Func<T, bool>> predicate)
     {
-        return Get(predicate).FirstOrDefault();
+        return Get(predicate).FirstOrDefault()!;
     }
 
     public T Add(T entity)
@@ -80,4 +75,5 @@ public class Repository<T> : IRepository<T> where T : BaseModel
     {
         _context.SaveChanges();
     }
+
 }

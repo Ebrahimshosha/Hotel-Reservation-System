@@ -14,19 +14,21 @@ public class RoomService : IRoomService
         _repository = repository;
     }
 
-    public IEnumerable<Room> GetAll()
+    public IEnumerable<RoomToReturnDto> GetAll()
     {
         var rooms = _repository.GetAll();
-        return rooms;
+        var roomsToReturnDto = rooms.Select(r => r.MapOne<RoomToReturnDto>());
+        return roomsToReturnDto;
     }
 
-    public Room Get(int id)
+    public RoomToReturnDto GetById(int id)
     {
         var room = _repository.GetByID(id);
-        return room;
+        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
+        return roomToReturnDto;
     }
 
-    public async Task<Room> AddAsync(CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> AddAsync(CreateRoomDTO createRoomDTO)
     {
         var fileName = await DocumentSettings.UploadFileAsync(createRoomDTO.Image_Url, "Images");
 
@@ -39,10 +41,11 @@ public class RoomService : IRoomService
         room = _repository.Add(room);
         _repository.SaveChanges();
 
-        return room;
+        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
+        return roomToReturnDto;
     }
 
-    public async Task<Room> UpdateAsync(int id, CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> UpdateAsync(int id, CreateRoomDTO createRoomDTO)
     {
         var roomfromdb = _repository.GetByID(id);
         if (roomfromdb is null)
@@ -61,10 +64,11 @@ public class RoomService : IRoomService
         _repository.Update(room);
         _repository.SaveChanges();
 
-        return room;
+        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
+        return roomToReturnDto;
     }
 
-    public void Delete(int id)
+    public bool Delete(int id)
     {
         var room = _repository.GetByID(id);
 
@@ -72,11 +76,15 @@ public class RoomService : IRoomService
         {
             _repository.Delete(id);
             _repository.SaveChanges();
+            return true;
         }
+        return false;
     }
-    public IEnumerable<Room> GetAvailableRooms(Room room)
+    public IEnumerable<RoomToReturnDto> GetAvailableRooms(Room room)
     {
         var rooms = _repository.Get(x => x.Price <= room.Price && x.IsAvailable && x.RoomType == room.RoomType);
-        return rooms;
+
+        var roomToReturnDto = rooms.Select(r => r.MapOne<RoomToReturnDto>());
+        return roomToReturnDto;
     }
 }

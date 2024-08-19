@@ -1,7 +1,7 @@
 ﻿
 namespace Hotel_Reservation_System.Helpers.PictureUrlResolve;
 
-public class RoomPictureUrlResolve : IValueResolver<RoomDTO, RoomViewModel, string>
+public class RoomPictureUrlResolve : IValueResolver<Room, RoomToReturnDto, string>
 {
 
     private readonly IConfiguration _configuration;
@@ -10,8 +10,7 @@ public class RoomPictureUrlResolve : IValueResolver<RoomDTO, RoomViewModel, stri
     {
         _configuration = configuration;
     }
-
-    public string Resolve(RoomDTO source, RoomViewModel destination, string destMember, ResolutionContext context)
+    public string Resolve(Room source, RoomToReturnDto destination, string destMember, ResolutionContext context)
     {
         if (!string.IsNullOrEmpty(source.Image_Url))
         {

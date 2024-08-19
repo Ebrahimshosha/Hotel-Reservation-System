@@ -1,4 +1,7 @@
 ﻿
+using Hotel_Reservation_System.DTO.Facility;
+using Microsoft.IdentityModel.Tokens;
+
 namespace Hotel_Reservation_System.Services.FacilitiesServices;
 
 public class FacilitiesService : IFacilitiesService
@@ -10,35 +13,52 @@ public class FacilitiesService : IFacilitiesService
         _repository = repository;
     }
 
-    public Facility Get(int id)
+    public FacilityToReturnDto GetById(int id)
     {
         var facility = _repository.GetByID(id);
-        return facility;
+        var facilityToReturnDto = facility.MapOne<FacilityToReturnDto>();
+        return facilityToReturnDto;
     }
-    public IEnumerable<Facility> GetFacilities()
+    public IEnumerable<FacilityToReturnDto> GetFacilities()
     {
         var facilities = _repository.GetAll();
-        return facilities;
+        var facilitiesToReturnDto = facilities.Select(f=>f.MapOne<FacilityToReturnDto>());
+        return facilitiesToReturnDto;
     }
-    public Facility Add(Facility facility)
-    {
-        facility = _repository.Add(facility);
-        return facility;
-    }
-    public Facility Update(int id, Facility facility)
-    {
-        facility = _repository.GetWithTrackinByID(id);
 
-        facility.Id = id;
-        facility.Name = facility.Name;
-        facility.price = facility.price;
+    public FacilityToReturnDto Add(FacilityDto facilityDTO)
+    {
+        var facilit = facilityDTO.MapOne<Facility>();
 
-        _repository.Update(facility);
+        var facility = _repository.Add(facilit);
         _repository.SaveChanges();
 
-        return facility;
+        var facilityToReturnDto = facility.MapOne<FacilityToReturnDto>();
+        return facilityToReturnDto;
     }
-    public void Delete(int id)
+
+    public FacilityToReturnDto Update(int id, FacilityDto facilityDTO)
+    {
+        var facilityfromdb = _repository.GetByID(id);
+
+        if (facilityfromdb is not null)
+        {
+            var facility = facilityDTO.MapOne<Facility>();
+
+            facility.Id = id;
+            facility.Name = facilityDTO.Name;
+            facility.price = facilityDTO.price;
+
+            _repository.Update(facility);
+            _repository.SaveChanges();
+
+            var facilityToReturnDto = facility.MapOne<FacilityToReturnDto>();
+
+            return facilityToReturnDto;
+        }
+        return null;
+    }
+    public bool Delete(int id)
     {
         var room = _repository.GetByID(id);
 
@@ -46,6 +66,8 @@ public class FacilitiesService : IFacilitiesService
         {
             _repository.Delete(id);
             _repository.SaveChanges();
+            return true;
         }
+        return false;
     }
 }
