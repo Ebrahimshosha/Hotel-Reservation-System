@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gaCuECmtpwWKmGXsx0JfukL7sdfkYaS4MYPBIeGSRd0=",
+  "Hash": "THqbj+zbXPt/Wl49Hyu9h4jeqLZ1rlO/GcHVu8Wrr9U=",
   "Source": "Hotel_Reservation_System",
   "BasePath": "_content/Hotel_Reservation_System",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Hotel_Reservation_System\\wwwroot",
       "Source": "Hotel_Reservation_System",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/39452acf-38b2-482f-9e90-75da7dbaf276.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3950dc6c-29b3-492c-91ce-18e883d3c321.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3950dc6c-29b3-492c-91ce-18e883d3c321.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/3950dc6c-29b3-492c-91ce-18e883d3c321.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\3950dc6c-29b3-492c-91ce-18e883d3c321.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3a9fb755-7e65-44c7-a793-89085ac97b21.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3a9fb755-7e65-44c7-a793-89085ac97b21.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/3a9fb755-7e65-44c7-a793-89085ac97b21.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\3a9fb755-7e65-44c7-a793-89085ac97b21.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\4156a69b-1330-42ab-886c-131f041afed9.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\4156a69b-1330-42ab-886c-131f041afed9.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/4156a69b-1330-42ab-886c-131f041afed9.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\4156a69b-1330-42ab-886c-131f041afed9.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\6274e5a1-3462-4386-9f68-90651f58d403.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\6274e5a1-3462-4386-9f68-90651f58d403.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/6274e5a1-3462-4386-9f68-90651f58d403.jpg",
       "AssetKind": "All",
@@ -112,10 +112,29 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\6274e5a1-3462-4386-9f68-90651f58d403.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\78f78565-a734-4dce-8c25-f064123d82d1.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "BasePath": "_content/Hotel_Reservation_System",
+      "RelativePath": "Files/Images/6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Images\\6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\78f78565-a734-4dce-8c25-f064123d82d1.jpg",
+      "SourceId": "Hotel_Reservation_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/78f78565-a734-4dce-8c25-f064123d82d1.jpg",
       "AssetKind": "All",
@@ -131,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\78f78565-a734-4dce-8c25-f064123d82d1.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\8aa9b62e-747e-4856-af62-00a78350c45a.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\8aa9b62e-747e-4856-af62-00a78350c45a.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/8aa9b62e-747e-4856-af62-00a78350c45a.jpg",
       "AssetKind": "All",
@@ -150,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\8aa9b62e-747e-4856-af62-00a78350c45a.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\a59178ab-d231-49f4-9218-77751f520f0a.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\a59178ab-d231-49f4-9218-77751f520f0a.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/a59178ab-d231-49f4-9218-77751f520f0a.jpg",
       "AssetKind": "All",
@@ -169,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\a59178ab-d231-49f4-9218-77751f520f0a.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg",
       "AssetKind": "All",
@@ -188,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfe91a7f-b102-444e-b494-30a7456b33fa.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfe91a7f-b102-444e-b494-30a7456b33fa.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/bfe91a7f-b102-444e-b494-30a7456b33fa.jpg",
       "AssetKind": "All",
@@ -207,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\bfe91a7f-b102-444e-b494-30a7456b33fa.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg",
       "AssetKind": "All",
@@ -226,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg",
       "AssetKind": "All",
@@ -245,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\edc2c7f9-c6ef-4146-bb2a-40279d1a51cf.jpg",
+      "Identity": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\edc2c7f9-c6ef-4146-bb2a-40279d1a51cf.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/edc2c7f9-c6ef-4146-bb2a-40279d1a51cf.jpg",
       "AssetKind": "All",
