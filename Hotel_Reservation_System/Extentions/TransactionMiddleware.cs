@@ -1,5 +1,4 @@
-﻿using Hotel_Reservation_System.Middlewares;
-
+﻿
 namespace Hotel_Reservation_System.Extentions;
 
 public static class CustomMiddleWare

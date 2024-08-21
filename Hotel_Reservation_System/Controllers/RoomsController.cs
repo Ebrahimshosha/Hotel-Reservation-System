@@ -10,6 +10,15 @@ public class RoomsController : BaseApiController
         _mediator = mediator;
     }
 
+    [HttpGet("{id}")]
+    public IActionResult Room([FromRoute] int id)
+    {
+        var roomToreturnDto = _mediator.GetById(id);
+        var roomViewModel = roomToreturnDto.MapOne<RoomViewModel>();
+
+        return Ok(roomViewModel);
+    }
+
     [HttpPost("")]
     public async Task<IActionResult> AddRoom([FromForm] CreateRoomViewModel viewModel)
     {
@@ -34,27 +43,19 @@ public class RoomsController : BaseApiController
         var isDeleted = _mediator.Delete(id);
         if (isDeleted)
         {
-
             return Ok();
         }
         return NotFound();
     }
 
-    [HttpPost("ViewRoomAvailability")]
+
+
+    [HttpGet("ViewRoomAvailability")]
     public IActionResult ViewRoomAvailability([FromBody] AvailabileRoomViewModel ViewModel)
     {
         var roomsDTO = _mediator.ViewRoomAvailability(ViewModel);
         var roomsViewModel = roomsDTO.Select(r => r.MapOne<RoomViewModel>());
         return Ok(roomsViewModel);
 
-    }
-
-    [HttpGet("{id}")]
-    public IActionResult Room([FromRoute] int id)
-    {
-        var roomToreturnDto = _mediator.Get(id);
-        var roomViewModel = roomToreturnDto.MapOne<RoomViewModel>();
-
-        return Ok(roomViewModel);
     }
 }

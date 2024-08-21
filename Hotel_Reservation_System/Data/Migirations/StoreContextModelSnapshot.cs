@@ -226,13 +226,6 @@ namespace Hotel_Reservation_System.Data.Migirations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Image_Url")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsAvailable")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -272,6 +265,31 @@ namespace Hotel_Reservation_System.Data.Migirations
                     b.HasIndex("RoomId");
 
                     b.ToTable("RoomFacilities");
+                });
+
+            modelBuilder.Entity("Hotel_Reservation_System.Models.RoomImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Image_Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("RoomId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("RoomImage");
                 });
 
             modelBuilder.Entity("Hotel_Reservation_System.Models.User", b =>
@@ -418,6 +436,14 @@ namespace Hotel_Reservation_System.Data.Migirations
                     b.Navigation("Room");
                 });
 
+            modelBuilder.Entity("Hotel_Reservation_System.Models.RoomImage", b =>
+                {
+                    b.HasOne("Hotel_Reservation_System.Models.Room", null)
+                        .WithMany("Images")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
             modelBuilder.Entity("Hotel_Reservation_System.Models.UserRole", b =>
                 {
                     b.HasOne("Hotel_Reservation_System.Models.Role", "Role")
@@ -435,6 +461,11 @@ namespace Hotel_Reservation_System.Data.Migirations
                     b.Navigation("Role");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Hotel_Reservation_System.Models.Room", b =>
+                {
+                    b.Navigation("Images");
                 });
 #pragma warning restore 612, 618
         }

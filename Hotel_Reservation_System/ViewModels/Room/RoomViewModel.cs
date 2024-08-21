@@ -3,7 +3,9 @@
 public class RoomViewModel
 {
     public double Price { get; set; }
-    public string RoomType { get; set; }
+    public string RoomType { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
-    public string Image_Url { get; set; }
+    public List<string> images { get; set; } = null!;
+    public List<int> FacilitiesIds { get; set; } = null!;
+
 }

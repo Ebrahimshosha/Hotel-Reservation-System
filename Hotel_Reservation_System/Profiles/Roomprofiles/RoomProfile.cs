@@ -10,25 +10,19 @@ public class RoomProfile : Profile
 {
     public RoomProfile()
     {
+
         CreateMap<CreateRoomViewModel, CreateRoomDTO>();
 
-        CreateMap<CreateRoomDTO, RoomDTO>(); // Is there more efficient way to mapping from CreateRoomDTO to RoomDTO in RoomMediator?
-
-        CreateMap<Room, RoomDTO>()
-            .ForMember(d => d.RoomType, o => o.MapFrom(s => s.RoomType.ToString()));
-
+        CreateMap<CreateRoomDTO, RoomDTO>();
 
         CreateMap<RoomDTO, Room>()
-            .ForMember(dest => dest.RoomType, opt => opt.MapFrom(src => Enum.Parse<RoomType>(src.RoomType, true)));
-        
-        CreateMap<AvailabileRoomViewModel, Room>();
-        CreateMap<RoomToReturnDto, RoomViewModel>();
+           .ForMember(dest => dest.RoomType, opt => opt.MapFrom(src => Enum.Parse<RoomType>(src.RoomType, true)));
 
+        CreateMap<Room, RoomToReturnDto>();
 
-
-        CreateMap<Room, RoomToReturnDto>()
-            .ForMember(d => d.Image_Url, o => o.MapFrom<RoomPictureUrlResolve>());
-        CreateMap<RoomToReturnDto,RoomDTO>();
+        CreateMap<RoomToReturnDto, RoomViewModel>()
+            .ForMember(d => d.images, o => o.MapFrom<RoomPictureUrlResolve>())
+            .ForMember(d => d.RoomType, o => o.MapFrom(s => s.RoomType.ToString()));
 
     }
 }

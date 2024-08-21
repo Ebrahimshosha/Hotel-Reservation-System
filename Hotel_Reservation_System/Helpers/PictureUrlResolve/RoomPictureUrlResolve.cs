@@ -1,7 +1,9 @@
 ﻿
+using Microsoft.IdentityModel.Tokens;
+
 namespace Hotel_Reservation_System.Helpers.PictureUrlResolve;
 
-public class RoomPictureUrlResolve : IValueResolver<Room, RoomToReturnDto, string>
+public class RoomPictureUrlResolve : IValueResolver<RoomToReturnDto, RoomViewModel, List<string>>
 {
 
     private readonly IConfiguration _configuration;
@@ -10,13 +12,18 @@ public class RoomPictureUrlResolve : IValueResolver<Room, RoomToReturnDto, strin
     {
         _configuration = configuration;
     }
-    public string Resolve(Room source, RoomToReturnDto destination, string destMember, ResolutionContext context)
+
+    public List<string> Resolve(RoomToReturnDto source, RoomViewModel destination, List<string> destMember, ResolutionContext context)
     {
-        if (!string.IsNullOrEmpty(source.Image_Url))
+        var images = new List<string>();
+        foreach (var img in source.images)
         {
-            return $"{_configuration["ApiBaseUrl"]}Files/Images/{source.Image_Url}";
+            if (!string.IsNullOrEmpty(img))
+            {
+                images.Add($"{_configuration["ApiBaseUrl"]}Files/Images/{img}");
+            }
         }
-        return string.Empty;
+        return images;
     }
 }
 

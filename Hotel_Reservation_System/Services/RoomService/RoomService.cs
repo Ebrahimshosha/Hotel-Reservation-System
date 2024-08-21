@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper.QueryableExtensions;
+using Hotel_Reservation_System.Data.migirations;
 using Hotel_Reservation_System.DTO.Room;
 using Hotel_Reservation_System.Helpers;
 
@@ -28,35 +29,24 @@ public class RoomService : IRoomService
         return roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> AddAsync(CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> AddAsync(RoomDTO roomDTO)
     {
-        var fileName = await DocumentSettings.UploadFileAsync(createRoomDTO.Image_Url, "Images");
-
-        var roomDTO = createRoomDTO.MapOne<RoomDTO>();
-        roomDTO.Image_Url = fileName;
-        // Is there more efficient way to mapping from CreateRoomDTO to RoomDTO in RoomMediator ?
-
         var room = roomDTO.MapOne<Room>();
 
         room = _repository.Add(room);
         _repository.SaveChanges();
 
-        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
-        return roomToReturnDto;
+        var roomToReturnDto =  room.MapOne<RoomToReturnDto>();
+        return  roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> UpdateAsync(int id, CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> UpdateAsync(int id, RoomDTO roomDTO)
     {
         var roomfromdb = _repository.GetByID(id);
         if (roomfromdb is null)
         {
             return null;
         }
-        var fileName = await DocumentSettings.UploadFileAsync(createRoomDTO.Image_Url, "Images");
-
-        var roomDTO = createRoomDTO.MapOne<RoomDTO>();
-        roomDTO.Image_Url = fileName;
-        // Is there more efficient way to mapping from CreateRoomDTO to RoomDTO in RoomMediator ?
 
         var room = roomDTO.MapOne<Room>();
         room.Id = id;
@@ -80,11 +70,13 @@ public class RoomService : IRoomService
         }
         return false;
     }
+    
+    
     public IEnumerable<RoomToReturnDto> GetAvailableRooms(Room room)
     {
-        var rooms = _repository.Get(x => x.Price <= room.Price && x.IsAvailable && x.RoomType == room.RoomType);
 
-        var roomToReturnDto = rooms.Select(r => r.MapOne<RoomToReturnDto>());
-        return roomToReturnDto;
+        return null;
     }
+
+   
 }
