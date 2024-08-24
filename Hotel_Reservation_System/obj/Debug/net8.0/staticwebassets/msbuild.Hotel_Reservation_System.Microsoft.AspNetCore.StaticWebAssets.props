@@ -1,11 +1,19 @@
 ﻿<Project>
   <ItemGroup>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\0b58b8e1-625f-441d-bdb3-bafaa604cf95.jpg))">
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\2550ca88-51e5-4139-959c-8784500c8d7f.jpg))">
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       <SourceType>Package</SourceType>
       <SourceId>Hotel_Reservation_System</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Hotel_Reservation_System</BasePath>
+<<<<<<< HEAD
       <RelativePath>Files/Images/0b58b8e1-625f-441d-bdb3-bafaa604cf95.jpg</RelativePath>
+=======
+      <RelativePath>Files/Images/2550ca88-51e5-4139-959c-8784500c8d7f.jpg</RelativePath>
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -14,6 +22,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+<<<<<<< HEAD
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\0b58b8e1-625f-441d-bdb3-bafaa604cf95.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\18c961bd-8366-4601-bb70-7febb136d291.jpg))">
@@ -79,6 +88,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\22170750-d1c3-4921-bd99-9819a57c2517.jpg))</OriginalItemSpec>
+=======
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\2550ca88-51e5-4139-959c-8784500c8d7f.jpg))</OriginalItemSpec>
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\39452acf-38b2-482f-9e90-75da7dbaf276.jpg))">
       <SourceType>Package</SourceType>
@@ -240,6 +252,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\6274e5a1-3462-4386-9f68-90651f58d403.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\69ffde7e-a2a1-4ed7-92c3-1f3a1f36ecf3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Hotel_Reservation_System</SourceId>
@@ -272,6 +285,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\6c35e6da-8a14-4277-bb22-88ac4704ee2b.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Hotel_Reservation_System</SourceId>
@@ -288,6 +303,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\715e1586-edd1-451c-9c8c-945cd2e468e7.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Hotel_Reservation_System</SourceId>
@@ -304,6 +320,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\715e1586-edd1-451c-9c8c-945cd2e468e7.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\Images\78f78565-a734-4dce-8c25-f064123d82d1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Hotel_Reservation_System</SourceId>

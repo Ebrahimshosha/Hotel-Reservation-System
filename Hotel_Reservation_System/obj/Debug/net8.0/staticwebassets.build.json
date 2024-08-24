@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "xVGXhM5i9gVJG0UiVV7MnIVzleKj5Ay5V7ftcdhBz84=",
+=======
+  "Hash": "XcsZdwvnSUArou5lmfkmAhqu+AWyCklYtT7DYQ4/fVE=",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
   "Source": "Hotel_Reservation_System",
   "BasePath": "_content/Hotel_Reservation_System",
   "Mode": "Default",
@@ -10,13 +14,14 @@
     {
       "Name": "Hotel_Reservation_System\\wwwroot",
       "Source": "Hotel_Reservation_System",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\0b58b8e1-625f-441d-bdb3-bafaa604cf95.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -113,9 +118,31 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\2550ca88-51e5-4139-959c-8784500c8d7f.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
+      "BasePath": "_content/Hotel_Reservation_System",
+      "RelativePath": "Files/Images/2550ca88-51e5-4139-959c-8784500c8d7f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Images\\2550ca88-51e5-4139-959c-8784500c8d7f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg",
+      "SourceId": "Hotel_Reservation_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/39452acf-38b2-482f-9e90-75da7dbaf276.jpg",
       "AssetKind": "All",
@@ -131,10 +158,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3950dc6c-29b3-492c-91ce-18e883d3c321.jpg",
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3950dc6c-29b3-492c-91ce-18e883d3c321.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/3950dc6c-29b3-492c-91ce-18e883d3c321.jpg",
       "AssetKind": "All",
@@ -150,10 +177,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\3950dc6c-29b3-492c-91ce-18e883d3c321.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3a9fb755-7e65-44c7-a793-89085ac97b21.jpg",
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\3a9fb755-7e65-44c7-a793-89085ac97b21.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/3a9fb755-7e65-44c7-a793-89085ac97b21.jpg",
       "AssetKind": "All",
@@ -169,6 +196,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\3a9fb755-7e65-44c7-a793-89085ac97b21.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\408216d2-5b84-4c96-8a29-4ec50cb7f3d4.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -189,9 +217,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\4156a69b-1330-42ab-886c-131f041afed9.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\4156a69b-1330-42ab-886c-131f041afed9.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/4156a69b-1330-42ab-886c-131f041afed9.jpg",
       "AssetKind": "All",
@@ -207,6 +238,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\4156a69b-1330-42ab-886c-131f041afed9.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\4a7b8c34-fa2f-4d59-b583-ea78d873d018.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -284,9 +316,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\6274e5a1-3462-4386-9f68-90651f58d403.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\6274e5a1-3462-4386-9f68-90651f58d403.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/6274e5a1-3462-4386-9f68-90651f58d403.jpg",
       "AssetKind": "All",
@@ -302,6 +337,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\6274e5a1-3462-4386-9f68-90651f58d403.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\69ffde7e-a2a1-4ed7-92c3-1f3a1f36ecf3.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -379,9 +415,31 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\78f78565-a734-4dce-8c25-f064123d82d1.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
+      "BasePath": "_content/Hotel_Reservation_System",
+      "RelativePath": "Files/Images/6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Images\\6cd6608d-599d-4121-9c7b-99219d6fe7a6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\78f78565-a734-4dce-8c25-f064123d82d1.jpg",
+      "SourceId": "Hotel_Reservation_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/78f78565-a734-4dce-8c25-f064123d82d1.jpg",
       "AssetKind": "All",
@@ -397,6 +455,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\78f78565-a734-4dce-8c25-f064123d82d1.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\79062de7-4fcf-40f4-b8aa-b22bc45322d1.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -493,9 +552,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\8aa9b62e-747e-4856-af62-00a78350c45a.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\8aa9b62e-747e-4856-af62-00a78350c45a.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/8aa9b62e-747e-4856-af62-00a78350c45a.jpg",
       "AssetKind": "All",
@@ -511,6 +573,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\8aa9b62e-747e-4856-af62-00a78350c45a.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\93f93a1a-d0d7-482f-9730-21a384ee87d9.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -531,9 +594,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\a59178ab-d231-49f4-9218-77751f520f0a.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\a59178ab-d231-49f4-9218-77751f520f0a.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/a59178ab-d231-49f4-9218-77751f520f0a.jpg",
       "AssetKind": "All",
@@ -549,6 +615,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\a59178ab-d231-49f4-9218-77751f520f0a.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\a7b19bb2-bcb2-4d61-874d-2f19f3c59ec6.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -664,9 +731,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg",
       "AssetKind": "All",
@@ -682,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\bfcb7376-4b08-4985-a203-42fa2ceafd5a.jpg"
     },
     {
-      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfe91a7f-b102-444e-b494-30a7456b33fa.jpg",
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\bfe91a7f-b102-444e-b494-30a7456b33fa.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/bfe91a7f-b102-444e-b494-30a7456b33fa.jpg",
       "AssetKind": "All",
@@ -701,6 +771,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\bfe91a7f-b102-444e-b494-30a7456b33fa.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\c5b3cefb-cd86-4001-86b8-5af6ef077257.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -740,9 +811,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg",
       "AssetKind": "All",
@@ -758,6 +832,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\dc47ce3c-1edf-4cd5-a9f0-a511e619ed9d.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -778,9 +853,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg",
       "AssetKind": "All",
@@ -796,6 +874,7 @@
       "OriginalItemSpec": "wwwroot\\Files\\Images\\dc4c718f-66e6-4fee-bb58-75fd6b211785.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\e41de2d8-b639-4f39-b54c-a48b4d355ff5.jpg",
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
@@ -873,9 +952,12 @@
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\edc2c7f9-c6ef-4146-bb2a-40279d1a51cf.jpg",
+=======
+      "Identity": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\edc2c7f9-c6ef-4146-bb2a-40279d1a51cf.jpg",
+>>>>>>> 8c0a07ce6db989caa6509ac2102fd49758002b79
       "SourceId": "Hotel_Reservation_System",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\wwwroot\\",
       "BasePath": "_content/Hotel_Reservation_System",
       "RelativePath": "Files/Images/edc2c7f9-c6ef-4146-bb2a-40279d1a51cf.jpg",
       "AssetKind": "All",

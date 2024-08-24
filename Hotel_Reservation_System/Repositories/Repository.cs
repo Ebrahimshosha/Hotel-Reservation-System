@@ -8,9 +8,9 @@ namespace Hotel_Reservation_System.Repositories;
 
 public class Repository<T> : IRepository<T> where T : BaseModel
 {
-    StoreContext _context;
+	private readonly DbContext _context;
 
-    public Repository(StoreContext context)
+	public Repository(StoreContext context)
     {
         _context = context;
     }

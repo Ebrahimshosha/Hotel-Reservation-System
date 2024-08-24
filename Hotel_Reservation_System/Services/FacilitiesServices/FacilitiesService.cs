@@ -22,7 +22,7 @@ public class FacilitiesService : IFacilitiesService
     public IEnumerable<FacilityToReturnDto> GetFacilities()
     {
         var facilities = _repository.GetAll();
-        var facilitiesToReturnDto = facilities.Select(f=>f.MapOne<FacilityToReturnDto>());
+        var facilitiesToReturnDto = facilities.Select(f => f.MapOne<FacilityToReturnDto>());
         return facilitiesToReturnDto;
     }
 
