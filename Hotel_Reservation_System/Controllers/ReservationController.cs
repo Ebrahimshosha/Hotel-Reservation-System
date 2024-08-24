@@ -22,7 +22,39 @@ namespace Hotel_Reservation_System.Controllers
 			_mediator.Add(reservationDto);
 			return Ok();
 		}
+		[HttpGet("GetAllReservation")]
+		public IActionResult GetAllReservation()
+		{
+			var facilitiesToReturnDto = _mediator.getAllReservation();
+			return Ok(facilitiesToReturnDto);
+		}
+		[HttpGet("{id}")]
+		public ReservationDto GetReservationsById([FromRoute] int id)
+		{
+			var reservationDto = _mediator.GetById(id);
+			return reservationDto;
+		}
 
+
+		[HttpPut("{id}")]
+		public IActionResult UpdateReservationDto([FromRoute] int id, [FromBody] ReservationDto reservationDto)
+		{
+			var reservationsDto = _mediator.Update(id, reservationDto);
+			return Ok(reservationsDto);
+		}
+
+		[HttpDelete("{id}")]
+		public IActionResult DeleteReservation([FromRoute] int id)
+		{
+			var isDeleted = _mediator.DeleteReservation(id);
+
+			if (isDeleted)
+			{
+
+				return Ok(true);
+			}
+			return Ok(false);
+		}
 
 
 

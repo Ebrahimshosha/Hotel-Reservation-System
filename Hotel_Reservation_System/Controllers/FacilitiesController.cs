@@ -1,4 +1,5 @@
 ﻿
+using Hotel_Reservation_System.DTO.Facility;
 using Hotel_Reservation_System.ViewModels.FacilitiesViewModel;
 
 namespace Hotel_Reservation_System.Controllers;
@@ -14,7 +15,7 @@ public class FacilitiesController : BaseApiController
 
     [HttpGet("")]
     public IActionResult GetAllFaility()
-    {
+    {//ahmed
         var facilitiesToReturnDto = _mediator.getAllFacilities();
         return Ok(facilitiesToReturnDto);
     }
