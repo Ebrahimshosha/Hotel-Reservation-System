@@ -1,6 +1,7 @@
 ﻿using Hotel_Reservation_System.DTO.Reservation;
 using Hotel_Reservation_System.Models;
 using Hotel_Reservation_System.Services.ReservationService;
+using Microsoft.EntityFrameworkCore;
 
 namespace Hotel_Reservation_System.Mediators.ReservationMediator
 {
@@ -58,6 +59,15 @@ namespace Hotel_Reservation_System.Mediators.ReservationMediator
 			}
 			return false;
 		}
+
+		public List<ReservationDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
+		{
+		
+			return _reservationService.GetAvailableRooms(checkInDate, checkOutDate);
+
+		}
+
+		 
 	}
 
 }

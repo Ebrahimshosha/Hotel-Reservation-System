@@ -11,5 +11,8 @@ namespace Hotel_Reservation_System.Mediators.ReservationMediator
 		ReservationDto GetById(int id);
 		ReservationDto Update(int id, ReservationDto reservationDto);
 		bool DeleteReservation(int id);
+
+		List<ReservationDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate);
+
 	}
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hotel_Reservation_System.Data.migirations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240824004348_ff")]
-    partial class ff
+    [Migration("20240825162932_WEbHot")]
+    partial class WEbHot
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

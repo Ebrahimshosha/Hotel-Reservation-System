@@ -11,6 +11,9 @@ namespace Hotel_Reservation_System.Services.ReservationService
 		bool Delete(int id);
 
 		void Add(ReservationDto reservationDto );
- 
- 	}
+
+		List<ReservationDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate);
+
+
+	}
 }
