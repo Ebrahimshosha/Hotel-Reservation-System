@@ -9,6 +9,7 @@ namespace Hotel_Reservation_System.Controllers;
 
 public class RoomsController : BaseApiController
 {
+    // edit
     private readonly IRoomMediator _mediator;
 
     public RoomsController(IRoomMediator mediator)
