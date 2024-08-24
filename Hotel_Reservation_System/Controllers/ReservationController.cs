@@ -1,4 +1,5 @@
-﻿using Hotel_Reservation_System.Mediators.ReservationMediator;
+﻿using Hotel_Reservation_System.DTO.Reservation;
+using Hotel_Reservation_System.Mediators.ReservationMediator;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hotel_Reservation_System.Controllers
@@ -12,14 +13,20 @@ namespace Hotel_Reservation_System.Controllers
 		{
 			_mediator = mediator;
 		}
-		[HttpGet("Reservation")]
-		public IActionResult GetAllFaility()
-		{
-			//User
+		 
+		//2024-08-23T14:30:00Z
 
-			//Reservation
-			var ReservationDto = _mediator.GetAllIReservation();
-			return Ok(ReservationDto);
+		[HttpPost("AddReservation")]
+ 		public IActionResult AddReservation([FromBody] ReservationDto reservationDto)
+		{
+			_mediator.Add(reservationDto);
+			return Ok();
 		}
+
+
+
+
+
+
 	}
 }

@@ -14,32 +14,10 @@ namespace Hotel_Reservation_System.Mediators.ReservationMediator
 			_reservationService = reservationService;
 		}
 
-
-		public bool DeleteReservation(int id)
+		public void Add(ReservationDto reservationDto)
 		{
-			var reservation = _reservationService.GetById(id);
-			if (reservation is not null)
-			{
-				_reservationService.DeleteReservation(id);
-				return true;
-			}
-			return false;
-		}
-
-		public IEnumerable<ReservationDto> GetAllIReservation()
-		{
-			var ReservationDto = _reservationService.GetReservations();
-
-			
-
-			return ReservationDto;
-		}
-
-		public ReservationDto GetById(int id)
-		{
-
-			var ReservationDto = _reservationService.GetById(id);
-			return ReservationDto;
+			_reservationService.Add(reservationDto);
+ 
 		}
 	}
 }

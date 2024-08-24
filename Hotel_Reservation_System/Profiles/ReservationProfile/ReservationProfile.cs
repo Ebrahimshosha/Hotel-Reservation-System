@@ -2,9 +2,9 @@
 
 namespace Hotel_Reservation_System.Profiles.RepositoryProfile
 {
-	public class RepositoryProfile : Profile
+	public class ReservationProfile : Profile
 	{
-		public RepositoryProfile() 
+		public ReservationProfile() 
 		{
 			CreateMap<ReservationDto, Reservation>();
 

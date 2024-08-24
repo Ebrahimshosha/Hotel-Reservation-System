@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\2550ca88-51e5-4139-959c-8784500c8d7f.jpg",
+      "PackagePath": "staticwebassets\\Files\\Images\\2550ca88-51e5-4139-959c-8784500c8d7f.jpg"
+    },
+    {
       "Id": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg",
       "PackagePath": "staticwebassets\\Files\\Images\\39452acf-38b2-482f-9e90-75da7dbaf276.jpg"
     },
