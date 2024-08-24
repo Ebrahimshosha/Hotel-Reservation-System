@@ -17,12 +17,18 @@ public class RoomProfile : Profile
         CreateMap<Room, RoomDTO>()
             .ForMember(d => d.RoomType, o => o.MapFrom(s => s.RoomType.ToString()));
 
-        CreateMap<RoomDTO, RoomViewModel>()
-            .ForMember(d => d.Image_Url, o => o.MapFrom<RoomPictureUrlResolve>());
 
         CreateMap<RoomDTO, Room>()
             .ForMember(dest => dest.RoomType, opt => opt.MapFrom(src => Enum.Parse<RoomType>(src.RoomType, true)));
         
         CreateMap<AvailabileRoomViewModel, Room>();
+        CreateMap<RoomToReturnDto, RoomViewModel>();
+
+
+
+        CreateMap<Room, RoomToReturnDto>()
+            .ForMember(d => d.Image_Url, o => o.MapFrom<RoomPictureUrlResolve>());
+        CreateMap<RoomToReturnDto,RoomDTO>();
+
     }
 }

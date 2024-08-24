@@ -9,37 +9,41 @@ public class RoomMediator : IRoomMediator
     {
         _roomService = roomService;
     }
-    public IEnumerable<Room> GetAll()
+    public IEnumerable<RoomToReturnDto> GetAll()
     {
-        var rooms = _roomService.GetAll();
-        return rooms;
+        var roomsToReturnDto = _roomService.GetAll();
+        return roomsToReturnDto;
     }
 
-    public Room Get(int id)
+    public RoomToReturnDto Get(int id)
     {
-        var room = _roomService.Get(id);
-        return room;
+        var roomToReturnDto = _roomService.GetById(id);
+        return roomToReturnDto;
     }
 
-    public async Task<RoomDTO> Add(CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> Add(CreateRoomDTO createRoomDTO)
     {
-        var room = await _roomService.AddAsync(createRoomDTO);
-        var roomDTO = room.MapOne<RoomDTO>();
-
-        return roomDTO;
+        var roomToReturnDto = await _roomService.AddAsync(createRoomDTO);
+        return roomToReturnDto;
     }
 
-    public async Task<RoomDTO> Update(int id, CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> Update(int id, CreateRoomDTO createRoomDTO)
     {
         var room = await _roomService.UpdateAsync(id, createRoomDTO);
-        var roomDTO = room.MapOne<RoomDTO>();
+        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
 
-        return roomDTO;
+        return roomToReturnDto;
     }
 
-    public void Delete(int id)
+    public bool Delete(int id)
     {
-        _roomService.Delete(id);
+        var roomToReturnDto = _roomService.GetById(id);
+        if (roomToReturnDto is not null)
+        {
+            _roomService.Delete(id);
+            return true;
+        }
+        return false ;
     }
 
     public IEnumerable<RoomDTO> ViewRoomAvailability(AvailabileRoomViewModel viewModel)

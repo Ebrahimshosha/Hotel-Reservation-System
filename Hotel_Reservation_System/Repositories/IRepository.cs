@@ -7,7 +7,6 @@ namespace Hotel_Reservation_System.Repositories;
 public interface IRepository<T> where T : BaseModel
 {
     IQueryable<T> GetAll();
-    IQueryable<T> GetAllWithInclude(string include);
     T GetByID(int id);
     T GetWithTrackinByID(int id);
     IQueryable<T> Get(Expression<Func<T, bool>> predicate);

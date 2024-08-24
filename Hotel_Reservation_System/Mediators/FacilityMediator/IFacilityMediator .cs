@@ -1,9 +1,13 @@
-﻿namespace Hotel_Reservation_System.Mediators.FacilityMediator;
+﻿using Hotel_Reservation_System.DTO.Facility;
+using Hotel_Reservation_System.ViewModels.FacilitiesViewModel;
+
+namespace Hotel_Reservation_System.Mediators.FacilityMediator;
 
 public interface IFacilityMediator
 {
-    Facility Add(Facility facility);
-    IEnumerable<Facility> getAllFacilities();
-    Facility Update(int id, Facility facility);
-    void DeleteFacility(int id);
+    IEnumerable<FacilityToReturnDto> getAllFacilities();
+    FacilityToReturnDto GetById(int id);
+    FacilityToReturnDto Add(CreateFacilityViewModel viewModel);
+    FacilityToReturnDto Update(int id, CreateFacilityViewModel viewModel);
+    bool DeleteFacility(int id);
 }

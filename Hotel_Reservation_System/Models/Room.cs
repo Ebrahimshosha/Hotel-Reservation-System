@@ -2,7 +2,8 @@
 
 public class Room: BaseModel
 {
-    public double Price { get; set; }
+ 
+	public double Price { get; set; }
     public RoomType RoomType { get; set; }    
     public bool IsAvailable { get; set; } = true;
     public string Description { get; set; } = string.Empty;

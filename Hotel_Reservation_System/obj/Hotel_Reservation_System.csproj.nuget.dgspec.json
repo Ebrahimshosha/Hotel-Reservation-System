@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
+    "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
   },
   "projects": {
-    "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {
+    "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
         "projectName": "Hotel_Reservation_System",
-        "projectPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-        "packagesPath": "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\",
-        "outputPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
+        "projectPath": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ibrahim shosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,6 +62,12 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -71,6 +77,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

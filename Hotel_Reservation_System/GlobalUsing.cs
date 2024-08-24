@@ -23,9 +23,11 @@ global using Hotel_Reservation_System.Services.RoomService;
 global using Hotel_Reservation_System.Services.FacilitiesServices;
 
 global using Hotel_Reservation_System.DTO.Room;
+global using Hotel_Reservation_System.DTO.Facility;
 
 global using Hotel_Reservation_System.Mediators.RoomMediator;
 global using Hotel_Reservation_System.Mediators.FacilityMediator;
 
 global using Hotel_Reservation_System.ViewModels.Room;
+global using Hotel_Reservation_System.ViewModels.FacilitiesViewModel;
 

@@ -1,4 +1,7 @@
 ﻿
+using Hotel_Reservation_System.DTO.Facility;
+using Hotel_Reservation_System.ViewModels.FacilitiesViewModel;
+
 namespace Hotel_Reservation_System.Controllers;
 
 public class FacilitiesController : BaseApiController
@@ -12,30 +15,43 @@ public class FacilitiesController : BaseApiController
 
     [HttpGet("")]
     public IActionResult GetAllFaility()
+    {//ahmed
+        var facilitiesToReturnDto = _mediator.getAllFacilities();
+        return Ok(facilitiesToReturnDto);
+    }
+    [HttpGet("{id}")]
+    public FacilityToReturnDto GetFacilityById([FromRoute] int id)
     {
-        var facilities = _mediator.getAllFacilities();
-        return Ok(facilities);
+        var facilityToReturnDto = _mediator.GetById(id);
+        return facilityToReturnDto;
     }
 
     [HttpPost("")]
-    public IActionResult Addfacility(Facility facility)
+    public IActionResult Addfacility([FromBody] CreateFacilityViewModel viewModel)
     {
-        facility = _mediator.Add(facility);
-        return Ok(facility);
+        var facilityToReturnDto = _mediator.Add(viewModel);
+
+        return Ok(facilityToReturnDto);
     }
 
     [HttpPut("{id}")]
-    public IActionResult Updatefacility(int id, Facility facility)
+    public IActionResult Updatefacility([FromRoute] int id, [FromBody] CreateFacilityViewModel viewModel)
     {
-        facility = _mediator.Update(id, facility);
-        return Ok(facility);
+        var facilityToReturnDto = _mediator.Update(id, viewModel);
+        return Ok(facilityToReturnDto);
     }
 
     [HttpDelete("{id}")]
-    public IActionResult Deletefacility(int id) 
+    public IActionResult Deletefacility([FromRoute] int id)
     {
-        _mediator.DeleteFacility(id);
-        return Ok();
+        var isDeleted = _mediator.DeleteFacility(id);
+
+        if (isDeleted)
+        {
+
+            return Ok(true);
+        }
+        return Ok(false);
     }
 }
 

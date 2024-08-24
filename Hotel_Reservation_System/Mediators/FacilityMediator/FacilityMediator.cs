@@ -1,4 +1,7 @@
 ﻿
+using Hotel_Reservation_System.DTO.Facility;
+using Hotel_Reservation_System.ViewModels.FacilitiesViewModel;
+
 namespace Hotel_Reservation_System.Mediators.FacilityMediator;
 
 public class FacilityMediator : IFacilityMediator
@@ -10,26 +13,44 @@ public class FacilityMediator : IFacilityMediator
         _facilitiesService = facilitiesService;
     }
 
-    public Facility Add(Facility facility)
+    public FacilityToReturnDto Add(CreateFacilityViewModel viewModel)
     {
-        facility = _facilitiesService.Add(facility);
-        return facility;
+        var facilityDTO = viewModel.MapOne<FacilityDto>();
+
+        var facilityToReturnDto = _facilitiesService.Add(facilityDTO);
+
+        return facilityToReturnDto;
     }
 
-    public Facility Update(int id, Facility facility)
+    public FacilityToReturnDto Update(int id, CreateFacilityViewModel  viewModel)
     {
-        facility = _facilitiesService.Update(id, facility);
-        return facility;
+        var facilityDTO = viewModel.MapOne<FacilityDto>();
+
+        var facilityToReturnDto = _facilitiesService.Update(id, facilityDTO);
+        
+        return facilityToReturnDto;
+    } 
+    
+    public FacilityToReturnDto GetById(int id)
+    {
+        var facilityToReturnDto = _facilitiesService.GetById(id);
+        return facilityToReturnDto;
     }
 
-    public IEnumerable<Facility> getAllFacilities()
+    public IEnumerable<FacilityToReturnDto> getAllFacilities()
     {
-        var facilities = _facilitiesService.GetFacilities();
-        return facilities;
+        var facilitiesToReturnDto = _facilitiesService.GetFacilities();
+        return facilitiesToReturnDto;
     }
 
-    public void DeleteFacility(int id)
+    public bool DeleteFacility(int id)
     {
-        _facilitiesService.Delete(id);
+        var facilty  = _facilitiesService.GetById(id);
+        if (facilty is not null)
+        {
+            _facilitiesService.Delete(id);
+            return true;
+        }
+        return false;
     }
 }
