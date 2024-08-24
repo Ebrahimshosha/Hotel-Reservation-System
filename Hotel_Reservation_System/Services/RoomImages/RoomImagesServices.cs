@@ -51,21 +51,6 @@ public class RoomImagesServices : IRoomImagesServices
         return updatedImageUrls;
     }
 
-    public bool Delete(int id)
-    {
-        var roomimages = _repository.Get(r => r.RoomId == id);
-
-        if (roomimages is not null)
-        {
-            foreach (var item in roomimages)
-            {
-                _repository.Delete(item.Id);
-                _repository.SaveChanges();
-                return true;
-            }
-        }
-        return false;
-    }
 
     public bool DeleteRoomImagesByRoomId(int roomId)
     {

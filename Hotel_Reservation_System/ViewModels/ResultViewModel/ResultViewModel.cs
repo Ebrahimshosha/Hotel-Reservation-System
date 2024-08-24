@@ -5,12 +5,12 @@ namespace Hotel_Reservation_System.ViewModels.ResultViewModel;
 public class ResultViewModel<T>
 {
     public bool IsSuccess { get; set; }
-    public T Data { get; set; }
-    public string Message { get; set; }
+    public T? Data { get; set; } 
+    public string Message { get; set; } = null!;
     public ErrorCode ErrorCode { get; set; }
 
 
-    public static ResultViewModel<T> Sucess<T>(T data, string message = "")
+    public static ResultViewModel<T> Sucess(T data, string message = "")
     {
         return new ResultViewModel<T>
         {

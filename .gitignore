@@ -1,14 +1,4 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/21c34248-eacc-41db-ad36-91d93dfbe07e.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/36e29467-8a2c-4eb2-834b-e7e693941db9.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/21c34248-eacc-41db-ad36-91d93dfbe07e.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/36e29467-8a2c-4eb2-834b-e7e693941db9.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/3aa9837b-a6a3-4de9-915e-d6d767531c5b.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/61977d7d-f043-4d78-8614-7756eab1fbe8.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/73c12e7a-1de6-44f0-9fd6-489abb74ac36.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/b3bd0410-35af-4d13-ab14-9163d248ff28.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/68136013-a8f2-4685-ba98-04083f98096c.vsidx
-/Hotel_Reservation_System/.vs/Hotel_Reservation_System/FileContentIndex/e9bc9876-dcab-4f82-b496-089604dc7a96.vsidx
+.vs/

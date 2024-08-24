@@ -1,4 +1,7 @@
 ﻿
+using Hotel_Reservation_System.DTO.Room;
+using Hotel_Reservation_System.ViewModels.CreateImagesViewModel;
+
 namespace Hotel_Reservation_System.Mediators.RoomMediator;
 
 public class RoomMediator : IRoomMediator
@@ -28,12 +31,6 @@ public class RoomMediator : IRoomMediator
     {
         var roomToReturnDto = _roomService.GetById(id);
 
-        var facilitiesIds = _roomFacilityService.GetFacilityIdsByRoomId(id);
-        roomToReturnDto.FacilitiesIds = facilitiesIds;
-
-        var images =  _roomImagesServices.GetImageUrlsByRoomId(id);
-        roomToReturnDto.images = images;
-
         return roomToReturnDto;
     }
 
@@ -44,10 +41,33 @@ public class RoomMediator : IRoomMediator
         var roomToReturnDto = await _roomService.AddAsync(roomDTO);
 
         var images = await _roomImagesServices.AddImagesRoom(roomToReturnDto.Id, createRoomDTO.Images);
-        roomToReturnDto.images = images;
+        roomToReturnDto.Images = images;
 
-        var facilitiesIds = _roomFacilityService.AddRoomFacility(roomToReturnDto.Id,createRoomDTO.FacilitiesIds);
+        var facilitiesIds = _roomFacilityService.AddRoomFacility(roomToReturnDto.Id, createRoomDTO.FacilitiesIds);
         roomToReturnDto.FacilitiesIds = facilitiesIds;
+
+        return roomToReturnDto;
+    }
+
+    public async Task<RoomToReturnDto> AddImagesToRoom(int RoomId, CreateImagesViewModel viewModel)
+    {
+        var roomToReturnDto = _roomService.GetById(RoomId);
+        var facilitiesImages = await _roomImagesServices.AddImagesRoom(RoomId, viewModel.Images);
+
+        roomToReturnDto.Images = roomToReturnDto.Images.Concat(facilitiesImages).ToList();
+
+        return roomToReturnDto;
+    }
+
+    public async Task<RoomToReturnDto> AddFacilitiesToRoom (int RoomId, CreateFacilityViewModel viewModel)
+    {
+        var roomToReturnDto = _roomService.GetById(RoomId);
+        var existingFacilitiesIds = roomToReturnDto.FacilitiesIds;
+
+        var addedFacilityIds = viewModel.FacilitiesIds.Except(existingFacilitiesIds).ToList();
+
+        var facilitiesIds = _roomFacilityService.AddRoomFacility(RoomId, addedFacilityIds);
+        roomToReturnDto.FacilitiesIds = existingFacilitiesIds.Concat(facilitiesIds).Distinct().ToList();
 
         return roomToReturnDto;
     }
@@ -59,7 +79,7 @@ public class RoomMediator : IRoomMediator
         var roomToReturnDto = await _roomService.UpdateAsync(id, roomDTO);
 
         var images = await _roomImagesServices.UpdateImagesRoom(roomToReturnDto.Id, createRoomDTO.Images);
-        roomToReturnDto.images = images;
+        roomToReturnDto.Images = images;
 
         var facilitiesIds = _roomFacilityService.UpdateRoomFacility(roomToReturnDto.Id, createRoomDTO.FacilitiesIds);
         roomToReturnDto.FacilitiesIds = facilitiesIds;
@@ -80,12 +100,9 @@ public class RoomMediator : IRoomMediator
         return false;
     }
 
-    public IEnumerable<RoomDTO> ViewRoomAvailability(AvailabileRoomViewModel viewModel)
+    public IEnumerable<RoomToReturnDto> ViewRoomAvailability(DateTime checkInDate, DateTime checkOutDate)
     {
-        var room = viewModel.MapOne<Room>();
-        var rooms = _roomService.GetAvailableRooms(room);
-        var roomDTO = rooms.Select(r => r.MapOne<RoomDTO>());
-
-        return roomDTO;
+        var roomsToReturnDto = _roomService.GetAvailableRooms(checkInDate, checkOutDate);
+        return roomsToReturnDto;
     }
 }

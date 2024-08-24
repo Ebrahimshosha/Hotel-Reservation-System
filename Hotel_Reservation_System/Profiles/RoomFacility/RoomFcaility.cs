@@ -2,10 +2,10 @@
 
 namespace Hotel_Reservation_System.Profiles.RoomFacilityProfiles;
 
-public class RoomFcailityDto : Profile
+public class RoomFcaility : Profile
 {
-    public RoomFcailityDto()
+    public RoomFcaility()
     {
-        CreateMap<RoomFacilityDto,RoomFacility>();
+        CreateMap<RoomFacilityDto,FacilityRoom>();
     }
 }

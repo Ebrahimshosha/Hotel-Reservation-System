@@ -43,6 +43,7 @@ public class Program
 
         var app = builder.Build();
 
+        app.GlobalErrorHandlerMiddleware();
         app.TransactionMiddleware();
 
         MapperHelper.Mapper = app.Services.GetService<IMapper>()!;

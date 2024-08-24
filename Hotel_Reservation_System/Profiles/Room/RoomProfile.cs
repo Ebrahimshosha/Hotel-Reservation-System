@@ -18,11 +18,15 @@ public class RoomProfile : Profile
         CreateMap<RoomDTO, Room>()
            .ForMember(dest => dest.RoomType, opt => opt.MapFrom(src => Enum.Parse<RoomType>(src.RoomType, true)));
 
-        CreateMap<Room, RoomToReturnDto>();
+        CreateMap<Room, RoomToReturnDto>()
+            .ForMember(d => d.Images, o => o.MapFrom(s => s.Images.Where(x => !x.IsDeleted).Select(i => i.Image_Url).ToList()))
+            .ForMember(d => d.FacilitiesIds, o => o.MapFrom(s => s.FacilityRoom.Where(x => !x.IsDeleted).Select(i => i.FacilitiesId).ToList()));
+           
 
         CreateMap<RoomToReturnDto, RoomViewModel>()
             .ForMember(d => d.images, o => o.MapFrom<RoomPictureUrlResolve>())
             .ForMember(d => d.RoomType, o => o.MapFrom(s => s.RoomType.ToString()));
+
 
     }
 }

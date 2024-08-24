@@ -1,31 +1,29 @@
 ﻿
-using AutoMapper.QueryableExtensions;
-using Hotel_Reservation_System.Data.migirations;
-using Hotel_Reservation_System.DTO.Room;
-using Hotel_Reservation_System.Helpers;
 
 namespace Hotel_Reservation_System.Services.RoomService;
 
 public class RoomService : IRoomService
 {
     private readonly IRepository<Room> _repository;
+    private readonly IRepository<Reservation> _reservationRepository;
 
-    public RoomService(IRepository<Room> repository)
+    public RoomService(IRepository<Room> repository, IRepository<Reservation> ReservationRepository)
     {
         _repository = repository;
+        _reservationRepository = ReservationRepository;
     }
 
     public IEnumerable<RoomToReturnDto> GetAll()
     {
         var rooms = _repository.GetAll();
-        var roomsToReturnDto = rooms.Select(r => r.MapOne<RoomToReturnDto>());
+        var roomsToReturnDto = rooms.Map<RoomToReturnDto>();
         return roomsToReturnDto;
     }
 
     public RoomToReturnDto GetById(int id)
     {
-        var room = _repository.GetByID(id);
-        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
+        var rooms = _repository.Get(r => r.Id == id);
+        var roomToReturnDto = rooms.Map<RoomToReturnDto>().FirstOrDefault()!;
         return roomToReturnDto;
     }
 
@@ -36,8 +34,8 @@ public class RoomService : IRoomService
         room = _repository.Add(room);
         _repository.SaveChanges();
 
-        var roomToReturnDto =  room.MapOne<RoomToReturnDto>();
-        return  roomToReturnDto;
+        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
+        return roomToReturnDto;
     }
 
     public async Task<RoomToReturnDto> UpdateAsync(int id, RoomDTO roomDTO)
@@ -70,13 +68,35 @@ public class RoomService : IRoomService
         }
         return false;
     }
-    
-    
-    public IEnumerable<RoomToReturnDto> GetAvailableRooms(Room room)
+
+
+    public IEnumerable<RoomToReturnDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
     {
 
-        return null;
+        var reservedRoomIds = GetReservedRoomIds(checkInDate, checkOutDate);
+
+        var availableRooms = GetAvailableRooms(reservedRoomIds);
+
+        var roomsToReturnDto = availableRooms.Map<RoomToReturnDto>();
+        return roomsToReturnDto; ;
     }
 
-   
+    private List<int> GetReservedRoomIds(DateTime checkInDate, DateTime checkOutDate )
+    {
+       var reservedRoomIds = _reservationRepository.GetAll()
+            .Where(r => r.Check_in_date < checkOutDate && r.Check_out_date > checkInDate)
+            .Select(r => r.Room.Id)
+            .Distinct()
+            .ToList();
+
+        return reservedRoomIds;
+    }
+
+    private IQueryable<Room> GetAvailableRooms(List<int> reservedRoomIds)
+    {
+        var availableRooms = _repository.GetAll()
+                                        .Where(r => !reservedRoomIds.Contains(r.Id));
+
+        return availableRooms;
+    }
 }

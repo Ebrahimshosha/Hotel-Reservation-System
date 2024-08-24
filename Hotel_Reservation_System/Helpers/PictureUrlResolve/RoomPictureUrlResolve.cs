@@ -16,7 +16,7 @@ public class RoomPictureUrlResolve : IValueResolver<RoomToReturnDto, RoomViewMod
     public List<string> Resolve(RoomToReturnDto source, RoomViewModel destination, List<string> destMember, ResolutionContext context)
     {
         var images = new List<string>();
-        foreach (var img in source.images)
+        foreach (var img in source.Images)
         {
             if (!string.IsNullOrEmpty(img))
             {

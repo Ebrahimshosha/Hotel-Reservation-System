@@ -9,5 +9,5 @@ public interface IRoomService
     Task<RoomToReturnDto> AddAsync(RoomDTO roomDTO );
     Task<RoomToReturnDto> UpdateAsync(int id, RoomDTO roomDTO);
     bool Delete(int id);
-    IEnumerable<RoomToReturnDto> GetAvailableRooms(Room room);
+    IEnumerable<RoomToReturnDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate);
 }

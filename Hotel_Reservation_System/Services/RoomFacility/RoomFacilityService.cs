@@ -5,9 +5,9 @@ namespace Hotel_Reservation_System.Services.RoomFacilityService;
 
 public class RoomFacilityService : IRoomFacilityService
 {
-    private readonly IRepository<RoomFacility> _repository;
+    private readonly IRepository<FacilityRoom> _repository;
 
-    public RoomFacilityService(IRepository<RoomFacility> repository)
+    public RoomFacilityService(IRepository<FacilityRoom> repository)
     {
         _repository = repository;
     }
@@ -21,7 +21,7 @@ public class RoomFacilityService : IRoomFacilityService
     {
         foreach (var id in roomFacilityIds)
         {
-            _repository.Add(new RoomFacility { RoomId = roomId, FacilitiesId = id });
+            _repository.Add(new FacilityRoom { RoomId = roomId, FacilitiesId = id });
         }
         _repository.SaveChanges();
 

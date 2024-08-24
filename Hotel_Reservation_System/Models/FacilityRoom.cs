@@ -2,7 +2,7 @@
 
 namespace Hotel_Reservation_System.Models;
 
-public class RoomFacility:BaseModel
+public class FacilityRoom : BaseModel
 {
     public int FacilitiesId { get; set; } 
     public Facility Facilities { get; set; } = null!;

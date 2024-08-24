@@ -2,6 +2,7 @@
 
 public class RoomViewModel
 {
+    public int Id { get; set; }
     public double Price { get; set; }
     public string RoomType { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
