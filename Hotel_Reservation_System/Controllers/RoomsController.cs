@@ -10,6 +10,13 @@ public class RoomsController : BaseApiController
         _mediator = mediator;
     }
 
+    [HttpGet("getAllRooms")]
+    public  IActionResult getAllRooms()
+    {
+        var roomDTO =  _mediator.GetAll();
+        var roomViewModel = roomDTO.MapOne<RoomViewModel>();
+        return Ok(roomViewModel);
+    }  
     [HttpPost("Room")]
     public async Task<IActionResult> AddRoom([FromForm] CreateRoomViewModel viewModel)
     {
