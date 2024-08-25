@@ -4685,11 +4685,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
       "projectName": "Hotel_Reservation_System",
-      "projectPath": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4793,7 +4793,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

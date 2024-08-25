@@ -1,57 +1,42 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\offerroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\offerroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\services\\roomfacility\\roomfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\roomfacility\\roomfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
   "WorkspaceRootPath": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\services\\roomservice\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\roomservice\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\mediators\\offermediator\\offermediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:mediators\\offermediator\\offermediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\controllers\\facilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\facilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> e94957d38ab1cd7e522d42e8d776f8601f4f9310
       "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\mediators\\roommediator\\iroommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:mediators\\roommediator\\iroommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\services\\roomfacility\\roomfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\roomfacility\\roomfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\lenovo\\source\\repos\\hotel-reservation-systemm\\hotel_reservation_system\\models\\offerroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\offerroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,153 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 26,
-<<<<<<< HEAD
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAACoAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T14:36:59.681Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-=======
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "Controllers\\PaymentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
+              "Title": "OfferMediator.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Mediators\\OfferMediator\\OfferMediator.cs",
+              "RelativeDocumentMoniker": "Mediators\\OfferMediator\\OfferMediator.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Mediators\\OfferMediator\\OfferMediator.cs",
+              "RelativeToolTip": "Mediators\\OfferMediator\\OfferMediator.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAEkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:27:37.005Z",
+              "WhenOpened": "2024-08-25T21:43:25.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRoomMediator.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Mediators\\RoomMediator\\IRoomMediator.cs",
+              "RelativeDocumentMoniker": "Mediators\\RoomMediator\\IRoomMediator.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Mediators\\RoomMediator\\IRoomMediator.cs",
+              "RelativeToolTip": "Mediators\\RoomMediator\\IRoomMediator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T20:54:10.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OfferController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\OfferController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OfferController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\OfferController.cs",
+              "RelativeToolTip": "Controllers\\OfferController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T20:44:16.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomFacilityService.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Services\\RoomFacility\\RoomFacilityService.cs",
+              "RelativeDocumentMoniker": "Services\\RoomFacility\\RoomFacilityService.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Services\\RoomFacility\\RoomFacilityService.cs",
+              "RelativeToolTip": "Services\\RoomFacility\\RoomFacilityService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAACUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T20:43:06.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAAC0AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:26:41.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FacilitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\FacilitiesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FacilitiesController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\FacilitiesController.cs",
-              "RelativeToolTip": "Controllers\\FacilitiesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:26:41.315Z"
->>>>>>> e94957d38ab1cd7e522d42e8d776f8601f4f9310
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-<<<<<<< HEAD
-              "Title": "OfferRoom.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\OfferRoom.cs",
-              "RelativeDocumentMoniker": "Models\\OfferRoom.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\OfferRoom.cs",
-              "RelativeToolTip": "Models\\OfferRoom.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T19:59:39.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Offer.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Offer.cs",
-              "RelativeDocumentMoniker": "Models\\Offer.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Offer.cs",
-              "RelativeToolTip": "Models\\Offer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T19:59:27.539Z",
-=======
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Services\\RoomService\\RoomService.cs",
-              "RelativeDocumentMoniker": "Services\\RoomService\\RoomService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Services\\RoomService\\RoomService.cs",
-              "RelativeToolTip": "Services\\RoomService\\RoomService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:26:41.323Z",
->>>>>>> e94957d38ab1cd7e522d42e8d776f8601f4f9310
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-<<<<<<< HEAD
-              "Title": "RoomFacilityService.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\RoomFacility\\RoomFacilityService.cs",
-              "RelativeDocumentMoniker": "Services\\RoomFacility\\RoomFacilityService.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\RoomFacility\\RoomFacilityService.cs",
-              "RelativeToolTip": "Services\\RoomFacility\\RoomFacilityService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T19:50:59.387Z",
-              "EditorCaption": ""
-=======
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Controllers\\RoomsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:26:41.332Z"
->>>>>>> e94957d38ab1cd7e522d42e8d776f8601f4f9310
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "RoomMediator.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Mediators\\RoomMediator\\RoomMediator.cs",
               "RelativeDocumentMoniker": "Mediators\\RoomMediator\\RoomMediator.cs",
               "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Mediators\\RoomMediator\\RoomMediator.cs",
               "RelativeToolTip": "Mediators\\RoomMediator\\RoomMediator.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAEcAAAAfAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAFcAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-08-25T18:05:12.015Z",
+              "WhenOpened": "2024-08-25T20:43:06.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "RoomsController.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
               "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
               "RelativeToolTip": "Controllers\\RoomsController.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAAAEoAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:07:54.584Z",
+              "WhenOpened": "2024-08-25T20:43:06.864Z",
               "EditorCaption": ""
-=======
-              "WhenOpened": "2024-08-24T20:26:41.341Z"
->>>>>>> e94957d38ab1cd7e522d42e8d776f8601f4f9310
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAC8AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T20:43:06.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Offer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Models\\Offer.cs",
+              "RelativeDocumentMoniker": "Models\\Offer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Models\\Offer.cs",
+              "RelativeToolTip": "Models\\Offer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T20:43:06.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OfferRoom.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Models\\OfferRoom.cs",
+              "RelativeDocumentMoniker": "Models\\OfferRoom.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Models\\OfferRoom.cs",
+              "RelativeToolTip": "Models\\OfferRoom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T20:43:06.821Z"
             }
           ]
         },
