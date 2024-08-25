@@ -49,17 +49,17 @@ public class RoomMediator : IRoomMediator
         return roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> AddImagesToRoom(int RoomId, CreateImagesViewModel viewModel)
+    public async Task<RoomToReturnDto> Update(int id, CreateRoomDTO createRoomDTO)
     {
-        var roomToReturnDto = _roomService.GetById(RoomId);
-        var facilitiesImages = await _roomImagesServices.AddImagesRoom(RoomId, viewModel.Images);
+        var roomDTO = createRoomDTO.MapOne<RoomDTO>();
 
-        roomToReturnDto.Images = roomToReturnDto.Images.Concat(facilitiesImages).ToList();
+        var roomToReturnDto = await _roomService.UpdateAsync(id, roomDTO);
+
 
         return roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> AddFacilitiesToRoom (int RoomId, CreateFacilityViewModel viewModel)
+    public async Task<RoomToReturnDto> UpdateRoomFacilities(int RoomId, CreateFacilityViewModel viewModel)
     {
         var roomToReturnDto = _roomService.GetById(RoomId);
         var existingFacilitiesIds = roomToReturnDto.FacilitiesIds;
@@ -72,17 +72,25 @@ public class RoomMediator : IRoomMediator
         return roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> Update(int id, CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> DeleteRoomFacilities(int RoomId, CreateFacilityViewModel viewModel)
     {
-        var roomDTO = createRoomDTO.MapOne<RoomDTO>();
+        var roomToReturnDto = _roomService.GetById(RoomId);
+        var existingFacilitiesIds = roomToReturnDto.FacilitiesIds;
 
-        var roomToReturnDto = await _roomService.UpdateAsync(id, roomDTO);
+        var addedFacilityIds = viewModel.FacilitiesIds.Except(existingFacilitiesIds).ToList();
 
-        var images = await _roomImagesServices.UpdateImagesRoom(roomToReturnDto.Id, createRoomDTO.Images);
-        roomToReturnDto.Images = images;
+        var facilitiesIds = _roomFacilityService.AddRoomFacility(RoomId, addedFacilityIds);
+        roomToReturnDto.FacilitiesIds = existingFacilitiesIds.Concat(facilitiesIds).Distinct().ToList();
 
-        var facilitiesIds = _roomFacilityService.UpdateRoomFacility(roomToReturnDto.Id, createRoomDTO.FacilitiesIds);
-        roomToReturnDto.FacilitiesIds = facilitiesIds;
+        return roomToReturnDto;
+    }
+
+    public async Task<RoomToReturnDto> UpdateRoomImages(int RoomId, CreateImagesViewModel viewModel)
+    {
+        var roomToReturnDto = _roomService.GetById(RoomId);
+        var facilitiesImages = await _roomImagesServices.AddImagesRoom(RoomId, viewModel.Images);
+
+        roomToReturnDto.Images = roomToReturnDto.Images.Concat(facilitiesImages).ToList();
 
         return roomToReturnDto;
     }

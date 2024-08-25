@@ -28,8 +28,8 @@ public class RoomImagesServices : IRoomImagesServices
             var fileName = await UploadImageAsync(image);
             if (!string.IsNullOrEmpty(fileName))
             {
-                uploadedImageUrls.Add(fileName);
                 await AddRoomImageAsync(roomId, fileName);
+                uploadedImageUrls.Add(fileName);
             }
         }
         return uploadedImageUrls;
@@ -50,7 +50,6 @@ public class RoomImagesServices : IRoomImagesServices
 
         return updatedImageUrls;
     }
-
 
     public bool DeleteRoomImagesByRoomId(int roomId)
     {

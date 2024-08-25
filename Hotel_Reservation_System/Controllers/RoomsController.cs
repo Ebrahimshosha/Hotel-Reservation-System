@@ -9,7 +9,6 @@ namespace Hotel_Reservation_System.Controllers;
 
 public class RoomsController : BaseApiController
 {
-    // edit
     private readonly IRoomMediator _mediator;
 
     public RoomsController(IRoomMediator mediator)
@@ -45,25 +44,6 @@ public class RoomsController : BaseApiController
         return ResultViewModel<RoomViewModel>.Sucess(roomViewModel);
     }
 
-    [HttpPost("AddFacilitiesToRoom/{RoomId}")]
-    public async Task<ResultViewModel<RoomViewModel>> AddFacilitiesToRoom([FromRoute] int RoomId, [FromBody] CreateFacilityViewModel viewModel)
-    {
-        var roomToreturnDTO = await _mediator.AddFacilitiesToRoom(RoomId, viewModel);
-
-        var roomViewModel = roomToreturnDTO.MapOne<RoomViewModel>();
-
-        return ResultViewModel<RoomViewModel>.Sucess(roomViewModel);
-    }
-
-    [HttpPost("AddImagesToRoom/{RoomId}")]
-    public async Task<ResultViewModel<bool>> AddImagesToRoom([FromRoute] int RoomId, [FromRoute] CreateImagesViewModel viewModel)
-    {
-        var images = await _mediator.AddImagesToRoom(RoomId, viewModel);
-
-        return ResultViewModel<bool>.Sucess(true);
-    }
-
-
     [HttpPut("{id}")]
     public async Task<ResultViewModel<RoomViewModel>> UpdateRoom([FromRoute] int id, [FromForm] CreateRoomViewModel viewModel)
     {
@@ -74,7 +54,28 @@ public class RoomsController : BaseApiController
         return ResultViewModel<RoomViewModel>.Sucess(roomViewModel);
     }
 
-    
+    [HttpPost("UpdateRoomFacilities/{RoomId}")]
+    public async Task<ResultViewModel<bool>> UpdateRoomFacilities([FromRoute] int RoomId, [FromBody] CreateFacilityViewModel viewModel)
+    {
+        var roomToreturnDTO = await _mediator.UpdateRoomFacilities(RoomId, viewModel);
+
+        return ResultViewModel<bool>.Sucess(true, $"Facilities in Room {RoomId} is Updated");
+    }
+
+    [HttpPost("UpdateRoomImages/{RoomId}")]
+    public async Task<ResultViewModel<bool>> UpdateRoomImages([FromRoute] int RoomId, [FromRoute] CreateImagesViewModel viewModel)
+    {
+        var roomToReturnDto = await _mediator.UpdateRoomImages(RoomId, viewModel);
+
+        return ResultViewModel<bool>.Sucess(true, $"Images in Room {RoomId} is Updated");
+    }
+    [HttpPost("DeleteRoomFacilities/{RoomId}")]
+    public async Task<ResultViewModel<bool>> DeleteRoomFacilities([FromRoute] int RoomId, [FromBody] CreateFacilityViewModel viewModel)
+    {
+        var roomToreturnDTO = await _mediator.DeleteRoomFacilities(RoomId, viewModel);
+
+        return ResultViewModel<bool>.Sucess(true, $"Facilities in Room {RoomId} is Updated");
+    }
 
     [HttpDelete("{id}")]
     public ResultViewModel<bool> DeleteRoom([FromRoute] int id)
