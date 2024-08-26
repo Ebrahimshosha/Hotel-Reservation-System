@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
         "packagesPath": "C:\\Users\\amira maher\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
-=======
-    "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-        "projectName": "Hotel_Reservation_System",
-        "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\",
->>>>>>> 41ea3837324ea1beb849fed88556493907b066de
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amira maher\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,11 +103,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
->>>>>>> 41ea3837324ea1beb849fed88556493907b066de
         }
       }
     }
