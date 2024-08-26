@@ -9,7 +9,6 @@ public interface IRoomMediator
     RoomToReturnDto GetById(int id);
     Task<RoomToReturnDto> Add(CreateRoomDTO createRoomDTO);
     Task<RoomToReturnDto> UpdateRoomFacilities(int RoomId, CreateFacilityViewModel viewModel);
-    Task<RoomToReturnDto> DeleteRoomFacilities(int RoomId, CreateFacilityViewModel viewModel);
     Task<RoomToReturnDto> UpdateRoomImages(int RoomId, CreateImagesViewModel viewModel);
     Task<RoomToReturnDto> Update(int id, CreateRoomDTO createRoomDTO);
     bool Delete(int id);
