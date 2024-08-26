@@ -12,7 +12,9 @@ public class GlobalErrorHandlerMiddleware
     private readonly IHostEnvironment _env;
     private readonly ILogger<GlobalErrorHandlerMiddleware> _logger;
 
-    public GlobalErrorHandlerMiddleware(RequestDelegate next, ILogger<GlobalErrorHandlerMiddleware> logger, IHostEnvironment env)
+    public GlobalErrorHandlerMiddleware(RequestDelegate next,
+                                        IHostEnvironment env,
+                                        ILogger<GlobalErrorHandlerMiddleware> logger)
     {
         _next = next;
         _logger = logger;
@@ -27,8 +29,6 @@ public class GlobalErrorHandlerMiddleware
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, $"Error happened : {ex.Message}");
-
             context.Response.ContentType = "applicatin/json";
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
@@ -42,7 +42,8 @@ public class GlobalErrorHandlerMiddleware
             }
             else
             {
-                File.WriteAllText("F:\\Log.txt", $"Error happened: {ex.Message},{ex.StackTrace!.ToString()}");
+                _logger.LogError(ex, $"Error happened : {ex.Message}");
+                File.WriteAllText("F:\\Log.txt", $"Error happened: {ex.Message}\n,{ex.StackTrace!.ToString()}");
             }
 
             var result = ResultViewModel<bool>.Faliure(errorCode, message);

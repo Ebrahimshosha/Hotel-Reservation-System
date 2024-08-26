@@ -7,6 +7,7 @@ using Hotel_Reservation_System.Data;
 using Hotel_Reservation_System.Extentions;
 using Hotel_Reservation_System.Helpers;
 using Hotel_Reservation_System.Middlewares;
+using Hotel_Reservation_System.Profiles.OfferProfile;
 using Hotel_Reservation_System.Profiles.Roomprofiles;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
@@ -44,9 +45,11 @@ public class Program
             builder.RegisterModule(new AutoFacModule()));
 
         builder.Services.AddAutoMapper(typeof(RoomProfile));
+        builder.Services.AddAutoMapper(typeof(OfferProfile));
 
         var app = builder.Build();
 
+        app.GlobalErrorHandlerMiddleware();
         app.TransactionMiddleware();
 
         MapperHelper.Mapper = app.Services.GetService<IMapper>()!;
@@ -61,7 +64,6 @@ public class Program
         app.UseHttpsRedirection();
         app.UseStaticFiles();
         app.UseAuthorization();
-
 
         app.MapControllers();
 
