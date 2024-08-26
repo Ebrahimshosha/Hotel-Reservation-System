@@ -13,4 +13,6 @@ public interface IRoomMediator
     Task<RoomToReturnDto> Update(int id, CreateRoomDTO createRoomDTO);
     bool Delete(int id);
     IEnumerable<RoomToReturnDto> ViewRoomAvailability(DateTime checkInDate, DateTime checkOutDate);
+    Task<bool> DeleteRoomFacilities(int RoomId, CreateFacilityViewModel viewModel);
+    Task<bool> DeleteRoomImages(int RoomId, List<string> Images);
 }

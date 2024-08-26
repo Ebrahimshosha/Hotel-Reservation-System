@@ -8,5 +8,5 @@ public interface IRoomFacilityService
     List<int> GetFacilityIdsByRoomId(int roomId);
     List<int> AddRoomFacility(int roomId, List<int> roomFacilityIds);
     List<int> UpdateRoomFacility(int roomId, List<int> roomFacilityIds);
-    bool DeleteRoomFacilitiesByRoomId(int roomId);
+    bool DeleteRoomFacilitiesByRoomId(int RoomId, List<int> FacilitiesIds = null);
 }

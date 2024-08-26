@@ -1,5 +1,6 @@
 ﻿
 using Hotel_Reservation_System.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Hotel_Reservation_System.Services.RoomFacilityService;
 
@@ -42,10 +43,11 @@ public class RoomFacilityService : IRoomFacilityService
         return updatedRoomFacilityids;
     }
 
-
-    public bool DeleteRoomFacilitiesByRoomId(int roomId)
+    public bool DeleteRoomFacilitiesByRoomId(int RoomId, List<int> FacilitiesIds = null)
     {
-        var roomFacilities = _repository.Get(r => r.RoomId == roomId).ToList();
+        bool hasFacilitiesIds = FacilitiesIds != null && FacilitiesIds.Count > 0;
+
+        var roomFacilities = _repository.Get(r => r.RoomId == RoomId && (!hasFacilitiesIds || FacilitiesIds!.Contains(r.FacilitiesId))).ToList();
 
         if (roomFacilities.Count == 0) { return false; }
 
@@ -53,6 +55,7 @@ public class RoomFacilityService : IRoomFacilityService
         {
             _repository.Delete(roomFacility.Id);
         }
+
         _repository.SaveChanges();
 
         return true;

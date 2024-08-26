@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0KHFbYWPzlNqjI0UP3Z0eilH7UBH8nrTyt7dzNxwPAU=",
+  "Hash": "3/HSVWNGbCtbryumwb4TYz3FO3OCn1y9rwRSiB+1qx4=",
   "Source": "Hotel_Reservation_System",
   "BasePath": "_content/Hotel_Reservation_System",
   "Mode": "Default",
@@ -794,6 +794,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\Images\\d2704b05-9d84-4e79-860e-b298348711d2.jpg"
+    },
+    {
+      "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\d6686989-9809-4ac8-86ab-0cd9ee51bb17.jpg",
+      "SourceId": "Hotel_Reservation_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\",
+      "BasePath": "_content/Hotel_Reservation_System",
+      "RelativePath": "Files/Images/d6686989-9809-4ac8-86ab-0cd9ee51bb17.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Images\\d6686989-9809-4ac8-86ab-0cd9ee51bb17.jpg"
     },
     {
       "Identity": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\wwwroot\\Files\\Images\\d94c4fe6-e30a-4175-8c66-34a55fa85a2e.jpg",

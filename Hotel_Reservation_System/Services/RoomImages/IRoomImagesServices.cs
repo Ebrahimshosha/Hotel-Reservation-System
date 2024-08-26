@@ -5,5 +5,5 @@ public interface IRoomImagesServices
     List<string> GetImageUrlsByRoomId(int roomId);
     Task<List<string>> AddImagesRoom(int roomId, List<IFormFile> images);
     Task<List<string>> UpdateImagesRoom(int roomId, List<IFormFile> images);
-    bool DeleteRoomImagesByRoomId(int roomId);
+    bool DeleteRoomImages(int roomId, List<string> Images=null);
 }

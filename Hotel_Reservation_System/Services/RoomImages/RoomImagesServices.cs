@@ -51,9 +51,14 @@ public class RoomImagesServices : IRoomImagesServices
         return updatedImageUrls;
     }
 
-    public bool DeleteRoomImagesByRoomId(int roomId)
+    public bool DeleteRoomImages(int RoomId, List<string> Images = null)
     {
-        var roomImages = _repository.Get(r => r.RoomId == roomId).ToList();
+        var ServerImages = Images?.Select(i => ExtractFileName(i)).ToList();
+
+        bool hasRoomImages = Images != null && Images.Count > 0;
+
+        var roomImages = _repository.Get(r => r.RoomId == RoomId && (!hasRoomImages || ServerImages!.Contains(r.Image_Url))).ToList();
+
 
         if (roomImages is null) return false;
 
@@ -78,5 +83,16 @@ public class RoomImagesServices : IRoomImagesServices
     {
         _repository.Add(new RoomImage { RoomId = roomId, Image_Url = imageUrl });
         _repository.SaveChanges();
+    }
+    private string ExtractFileName(string fullUrl)
+    {
+        string baseUrl = "https://localhost:7223/Files/Images/";
+
+        if (fullUrl.StartsWith(baseUrl))
+        {
+            return fullUrl.Substring(baseUrl.Length);
+        }
+
+        return null;
     }
 }

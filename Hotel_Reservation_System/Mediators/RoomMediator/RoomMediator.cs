@@ -1,6 +1,8 @@
 ﻿
 using Hotel_Reservation_System.DTO.Room;
+using Hotel_Reservation_System.Models;
 using Hotel_Reservation_System.ViewModels.CreateImagesViewModel;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Hotel_Reservation_System.Mediators.RoomMediator;
 
@@ -72,19 +74,6 @@ public class RoomMediator : IRoomMediator
         return roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> DeleteRoomFacilities(int RoomId, CreateFacilityViewModel viewModel)
-    {
-        var roomToReturnDto = _roomService.GetById(RoomId);
-        var existingFacilitiesIds = roomToReturnDto.FacilitiesIds;
-
-        var addedFacilityIds = viewModel.FacilitiesIds.Except(existingFacilitiesIds).ToList();
-
-        var facilitiesIds = _roomFacilityService.AddRoomFacility(RoomId, addedFacilityIds);
-        roomToReturnDto.FacilitiesIds = existingFacilitiesIds.Concat(facilitiesIds).Distinct().ToList();
-
-        return roomToReturnDto;
-    }
-
     public async Task<RoomToReturnDto> UpdateRoomImages(int RoomId, CreateImagesViewModel viewModel)
     {
         var roomToReturnDto = _roomService.GetById(RoomId);
@@ -102,10 +91,23 @@ public class RoomMediator : IRoomMediator
         {
             _roomService.Delete(id);
             _roomFacilityService.DeleteRoomFacilitiesByRoomId(id);
-            _roomImagesServices.DeleteRoomImagesByRoomId(id);
+            _roomImagesServices.DeleteRoomImages(id);
             return true;
         }
         return false;
+    }
+
+    public async Task<bool> DeleteRoomFacilities(int RoomId, CreateFacilityViewModel viewModel)
+    {
+        var facilitiesIds = _roomFacilityService.DeleteRoomFacilitiesByRoomId(RoomId, viewModel.FacilitiesIds);
+
+        return true;
+    }
+    public async Task<bool>  DeleteRoomImages(int RoomId,List<string> Images)
+    {
+        var images = _roomImagesServices.DeleteRoomImages(RoomId, Images);
+
+        return true;
     }
 
     public IEnumerable<RoomToReturnDto> ViewRoomAvailability(DateTime checkInDate, DateTime checkOutDate)

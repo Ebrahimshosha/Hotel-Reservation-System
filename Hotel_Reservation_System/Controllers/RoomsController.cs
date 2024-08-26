@@ -54,7 +54,7 @@ public class RoomsController : BaseApiController
         return ResultViewModel<RoomViewModel>.Sucess(roomViewModel);
     }
 
-    [HttpPost("UpdateRoomFacilities/{RoomId}")]
+    [HttpPut("UpdateRoomFacilities/{RoomId}")]
     public async Task<ResultViewModel<bool>> UpdateRoomFacilities([FromRoute] int RoomId, [FromBody] CreateFacilityViewModel viewModel)
     {
         var roomToreturnDTO = await _mediator.UpdateRoomFacilities(RoomId, viewModel);
@@ -62,19 +62,28 @@ public class RoomsController : BaseApiController
         return ResultViewModel<bool>.Sucess(true, $"Facilities in Room {RoomId} is Updated");
     }
 
-    [HttpPost("UpdateRoomImages/{RoomId}")]
+    [HttpPut("UpdateRoomImages/{RoomId}")]
     public async Task<ResultViewModel<bool>> UpdateRoomImages([FromRoute] int RoomId, [FromRoute] CreateImagesViewModel viewModel)
     {
         var roomToReturnDto = await _mediator.UpdateRoomImages(RoomId, viewModel);
 
         return ResultViewModel<bool>.Sucess(true, $"Images in Room {RoomId} is Updated");
     }
-    [HttpPost("DeleteRoomFacilities/{RoomId}")]
+
+    [HttpDelete("DeleteRoomFacilities/{RoomId}")]
     public async Task<ResultViewModel<bool>> DeleteRoomFacilities([FromRoute] int RoomId, [FromBody] CreateFacilityViewModel viewModel)
     {
         var roomToreturnDTO = await _mediator.DeleteRoomFacilities(RoomId, viewModel);
 
         return ResultViewModel<bool>.Sucess(true, $"Facilities in Room {RoomId} is Updated");
+    }
+
+    [HttpDelete("DeleteRoomImages/{RoomId}")]
+    public async Task<ResultViewModel<bool>> DeleteRoomImages([FromRoute] int RoomId, [FromBody] List<string> Images)
+    {
+        var roomToreturnDTO = await _mediator.DeleteRoomImages(RoomId, Images);
+
+        return ResultViewModel<bool>.Sucess(true, $"Images in Room {RoomId} is Updated");
     }
 
     [HttpDelete("{id}")]
