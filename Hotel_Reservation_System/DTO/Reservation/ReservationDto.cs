@@ -10,10 +10,10 @@ namespace Hotel_Reservation_System.DTO.Reservation
 		public DateTime Check_in_date { get; set; }
 		public DateTime Check_out_date { get; set; }
 		public double Total_Price { get; set; }
-		 
+
+		public List<RoomDTO> RoomDTO { get; set; } = new List<RoomDTO>();
 
 
- 
 
 
 

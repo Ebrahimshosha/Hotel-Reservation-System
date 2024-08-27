@@ -4699,11 +4699,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\amira maher\\.nuget\\packages\\": {}
+>>>>>>> f5661179dc9cce3a979777d6780c6d15f5eb7aa6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
       "projectName": "Hotel_Reservation_System",
       "projectPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
@@ -4712,6 +4717,24 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ibrahim shosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "projectName": "Hotel_Reservation_System",
+      "projectPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "packagesPath": "C:\\Users\\amira maher\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "projectName": "Hotel_Reservation_System",
+      "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\",
+>>>>>>> 41ea3837324ea1beb849fed88556493907b066de
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\amira maher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> f5661179dc9cce3a979777d6780c6d15f5eb7aa6
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4719,7 +4742,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4734,9 +4756,7 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
+        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -4803,8 +4823,31 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
+=======
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 41ea3837324ea1beb849fed88556493907b066de
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+<<<<<<< HEAD
+      "message": "Problem reading the cache file C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problem reading the cache file C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> 41ea3837324ea1beb849fed88556493907b066de
+    }
+  ]
+>>>>>>> f5661179dc9cce3a979777d6780c6d15f5eb7aa6
 }

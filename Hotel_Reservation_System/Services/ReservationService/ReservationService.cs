@@ -1,18 +1,22 @@
 ﻿using Hotel_Reservation_System.DTO.Facility;
 using Hotel_Reservation_System.DTO.Reservation;
 using Hotel_Reservation_System.Models;
-
+ 
 namespace Hotel_Reservation_System.Services.ReservationService
 {
 	public class ReservationService : IReservationService
 	{
 		private readonly IRepository<Reservation> _repository;
+		private readonly IRepository<Room> _repositoryRoom;
+ 
 
-
-		public ReservationService(IRepository<Reservation> repository, IRepository<Room> roomRepository)
+		public ReservationService(IRepository<Reservation> repository, IRepository<Room> repositoryRooms)
 		{
 			_repository = repository;
- 		}
+			_repositoryRoom = repositoryRooms;
+ 
+
+		}
 
 		public bool Delete(int id)
 		{
@@ -26,6 +30,10 @@ namespace Hotel_Reservation_System.Services.ReservationService
 			}
 			return false;
 		}
+
+
+ 		      
+
 
 		public ReservationDto GetById(int id)
 		{
@@ -72,7 +80,35 @@ namespace Hotel_Reservation_System.Services.ReservationService
 			_repository.SaveChanges();
  		}
 
- 
-  
+
+
+		public List<ReservationDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
+		{
+			var availableRooms = _repositoryRoom.GetAll()
+				.Where(room => !_repository.GetAll()
+					.Any(r => r.Room.Id == room.Id && r.Check_in_date < checkOutDate && r.Check_out_date > checkInDate))
+				.Select(room => new ReservationDto
+				{
+					Check_in_date = DateTime.MinValue, 
+
+					Check_out_date = DateTime.MinValue,  
+					Total_Price = 0,  
+					RoomDTO = new List<RoomDTO> { room.MapOne<RoomDTO>() }
+				})
+				.ToList();
+
+ 			if (availableRooms.Count > 0)
+			{
+				return availableRooms;
+			}
+			else
+			{
+ 				return new List<ReservationDto> { new ReservationDto { RoomDTO = new List<RoomDTO> { new RoomDTO { RoomType = "لا توجد غرف متاحة في هذه الفترة" } } } };
+			}
+		}
+		///api/Reservation/SearchRoom?checkInDate=2024-08-01T14:00:00&checkOutDate=2024-08-05T11:00:00
+
+
+
 	}
 }

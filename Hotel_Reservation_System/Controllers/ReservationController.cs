@@ -57,8 +57,13 @@ namespace Hotel_Reservation_System.Controllers
 		}
 
 
-
-
+		[HttpGet("SearchRoom")]
+		public IActionResult SearchRoom(DateTime checkInDate, DateTime checkOutDate)
+		{
+			var availableRooms = _mediator.GetAvailableRooms(checkInDate, checkOutDate);
+			return Ok(availableRooms);
+		}
+ 
 
 	}
 }
