@@ -976,19 +976,19 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore/6.7.2": {
+      "Swashbuckle.AspNetCore/6.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-          "Swashbuckle.AspNetCore.Swagger": "6.7.2",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.7.2",
-          "Swashbuckle.AspNetCore.SwaggerUI": "6.7.2"
+          "Swashbuckle.AspNetCore.Swagger": "6.7.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.7.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.7.3"
         },
         "build": {
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.7.2": {
+      "Swashbuckle.AspNetCore.Swagger/6.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.6.14"
@@ -1007,10 +1007,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/6.7.2": {
+      "Swashbuckle.AspNetCore.SwaggerGen/6.7.3": {
         "type": "package",
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "6.7.2"
+          "Swashbuckle.AspNetCore.Swagger": "6.7.3"
         },
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
@@ -1023,7 +1023,7 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/6.7.2": {
+      "Swashbuckle.AspNetCore.SwaggerUI/6.7.3": {
         "type": "package",
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
@@ -3407,22 +3407,22 @@
         "packageIcon.png"
       ]
     },
-    "Swashbuckle.AspNetCore/6.7.2": {
-      "sha512": "464D/dwPzHUE8gbj2DVOTY8SkITwu/S0KBfJFMWIfYVVJa7d/fFCm6yMK5KFzhaDqznClXFROwnP+R5Zyptz2g==",
+    "Swashbuckle.AspNetCore/6.7.3": {
+      "sha512": "PYTm/M5YrkEUHmguhj6vF1DshG2deKMMcsnhKet1BkcKzZHNX/VVQady0T/jNpXrtxhLR3vB10hWhONF1Nbglw==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore/6.7.2",
+      "path": "swashbuckle.aspnetcore/6.7.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Swashbuckle.AspNetCore.props",
-        "swashbuckle.aspnetcore.6.7.2.nupkg.sha512",
+        "swashbuckle.aspnetcore.6.7.3.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/6.7.2": {
-      "sha512": "bFKfYjlHjnQFB1vbsIEhxPWlKx5dHuCAUXUxun1ZjqF5BNcV7fSunSpRKAx3fUGUZD76+KlPVhik3sTXqT9i8g==",
+    "Swashbuckle.AspNetCore.Swagger/6.7.3": {
+      "sha512": "plNVrOpup/UCIP0aSE5cznIzXMC17EOOqIceWqhP829evEAUwTomCc+1TPy2xK2E+OilYcYEdUus3rOUMjjm/g==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/6.7.2",
+      "path": "swashbuckle.aspnetcore.swagger/6.7.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3445,14 +3445,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swagger.6.7.2.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.6.7.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/6.7.2": {
-      "sha512": "QWsO8lGWwHq3Xx8X96R/pjNvwvpuo02Mcu/kZlxgo/6UimYZNUaItrk7lp3zXFP864+/iMIT3EKPKdEWuW5zJw==",
+    "Swashbuckle.AspNetCore.SwaggerGen/6.7.3": {
+      "sha512": "kvjGd+g85YFZqyEQZSBUCPtEDDCZsiPPYcjgBN6si3C3oik2c9d7Zlq4PIm07pgY/QmBMgyFOVEzHbks6a398w==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/6.7.2",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.7.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3475,14 +3475,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggergen.6.7.2.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.6.7.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/6.7.2": {
-      "sha512": "9zw5wMh75u2LX+FyvoX4vXPHi8sWUmzD2coY35OnFkTpA156aZpeaLf8u3URukjBWJKpBK+eENnWzTCc4z6lSA==",
+    "Swashbuckle.AspNetCore.SwaggerUI/6.7.3": {
+      "sha512": "exXUT9h++OU70jTCfQALiHzeBthqL7c5IFQm+aa67Hi/6X945t32NtOMO16TaRn44xFXdqMZ2CyMbgnTmx+w2A==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/6.7.2",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.7.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3505,7 +3505,7 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggerui.6.7.2.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.6.7.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
@@ -4695,20 +4695,15 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "Newtonsoft.Json >= 13.0.3",
-      "Swashbuckle.AspNetCore >= 6.7.2"
+      "Swashbuckle.AspNetCore >= 6.7.3"
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\amira maher\\.nuget\\packages\\": {}
->>>>>>> f5661179dc9cce3a979777d6780c6d15f5eb7aa6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
       "projectName": "Hotel_Reservation_System",
       "projectPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
@@ -4717,24 +4712,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ibrahim shosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-      "projectName": "Hotel_Reservation_System",
-      "projectPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-      "packagesPath": "C:\\Users\\amira maher\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-      "projectName": "Hotel_Reservation_System",
-      "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\",
->>>>>>> 41ea3837324ea1beb849fed88556493907b066de
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\amira maher\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> f5661179dc9cce3a979777d6780c6d15f5eb7aa6
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4742,6 +4719,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4756,7 +4734,9 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "default"
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4801,7 +4781,7 @@
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[6.7.2, )"
+            "version": "[6.7.3, )"
           }
         },
         "imports": [
@@ -4823,31 +4803,8 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
-=======
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
->>>>>>> 41ea3837324ea1beb849fed88556493907b066de
-      }
-    }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-<<<<<<< HEAD
-      "message": "Problem reading the cache file C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-=======
-      "message": "Problem reading the cache file C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemm\\Hotel_Reservation_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
->>>>>>> 41ea3837324ea1beb849fed88556493907b066de
-    }
-  ]
->>>>>>> f5661179dc9cce3a979777d6780c6d15f5eb7aa6
 }
