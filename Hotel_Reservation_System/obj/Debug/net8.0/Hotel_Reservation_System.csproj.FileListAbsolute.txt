@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\appsettings.Development.json
 E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\appsettings.json
 E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Hotel_Reservation_System.staticwebassets.runtime.json
@@ -145,6 +146,8 @@ E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel
 =======
 <<<<<<< HEAD
 E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Hotel_Reservation_System.staticwebassets.runtime.json
+=======
+>>>>>>> ce5c12a4ad7eb3d2a391400a5e261413b913bf81
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\appsettings.json
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Hotel_Reservation_System.staticwebassets.runtime.json
@@ -183,6 +186,7 @@ C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\b
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -287,6 +291,7 @@ C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\o
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\obj\Debug\net8.0\Hotel_Reservation_System.pdb
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\obj\Debug\net8.0\Hotel_Reservation_System.genruntimeconfig.cache
 C:\Users\amira maher\Desktop\Hotel-Reservation-System\Hotel_Reservation_System\obj\Debug\net8.0\ref\Hotel_Reservation_System.dll
+<<<<<<< HEAD
 C:\Users\lenovo\source\hotel-system\Hotel_Reservation_System\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\lenovo\source\hotel-system\Hotel_Reservation_System\bin\Debug\net8.0\appsettings.json
 C:\Users\lenovo\source\hotel-system\Hotel_Reservation_System\bin\Debug\net8.0\Hotel_Reservation_System.staticwebassets.runtime.json
@@ -576,3 +581,5 @@ C:\Users\lenovo\Source\Repos\Hotel-Reservation-Systemm\Hotel_Reservation_System\
 C:\Users\lenovo\Source\Repos\Hotel-Reservation-Systemm\Hotel_Reservation_System\obj\Debug\net8.0\ref\Hotel_Reservation_System.dll
 >>>>>>> 41ea3837324ea1beb849fed88556493907b066de
 >>>>>>> f5661179dc9cce3a979777d6780c6d15f5eb7aa6
+=======
+>>>>>>> ce5c12a4ad7eb3d2a391400a5e261413b913bf81
