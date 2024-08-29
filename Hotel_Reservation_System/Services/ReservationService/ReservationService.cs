@@ -4,155 +4,145 @@ using Hotel_Reservation_System.Models;
 
 namespace Hotel_Reservation_System.Services.ReservationService
 {
-	public class ReservationService : IReservationService
-	{
-		private readonly IRepository<Reservation> _repository;
-		private readonly IRepository<Room> _repositoryRoom;
+    public class ReservationService : IReservationService
+    {
+        private readonly IRepository<Reservation> _repository;
+        private readonly IRepository<Room> _repositoryRoom;
+        private readonly IRoomService _roomService;
 
+        public ReservationService(IRepository<Reservation> repository,
+                                  IRepository<Room> repositoryRooms,
+                                  IRoomService roomService)
+        {
+            _repository = repository;
+            _repositoryRoom = repositoryRooms;
+            _roomService = roomService;
+        }
 
-		public ReservationService(IRepository<Reservation> repository, IRepository<Room> repositoryRooms)
-		{
-			_repository = repository;
-			_repositoryRoom = repositoryRooms;
+        public ReservationToReturnDto GetById(int id)
+        {
+            var reservation = _repository.GetByID(id);
+            var reservationToReturnDTO = reservation.MapOne<ReservationToReturnDto>();
 
+            return reservationToReturnDTO;
+        }
 
-		}
+        public IEnumerable<ReservationToReturnDto> GetAllReservation()
+        {
+            var reservation = _repository.GetAll();
+            var reservationsToReturnDTO = reservation.Select(f => f.MapOne<ReservationToReturnDto>());
+            return reservationsToReturnDTO;
+        }
 
-		public bool Delete(int id)
-		{
-			var room = _repository.GetByID(id);
+        public ReservationToReturnDto Add(ReservationDto reservationDto, double totalPrice)
+        {
+            var isRoomAvailable = IsRoomAvailable(reservationDto.RoomId, reservationDto.Check_in_date, reservationDto.Check_out_date);
 
-			if (room is not null)
-			{
-				_repository.Delete(id);
-				_repository.SaveChanges();
-				return true;
-			}
-			return false;
-		}
+            if (isRoomAvailable)
+            {
+                var reservation = reservationDto.MapOne<Reservation>();
 
-		public ReservationDto GetById(int id)
-		{
-			var reservation = _repository.GetByID(id);
-			var reservationDto = reservation.MapOne<ReservationDto>();
-			return reservationDto;
-		}
+                var stayingDays = (reservationDto.Check_out_date - reservationDto.Check_in_date).Days;
+                stayingDays = stayingDays == 0 ? 1 : stayingDays;
+                reservation.Total_Price = totalPrice * stayingDays;
+                reservation.UserId = 3;
+                reservation = _repository.Add(reservation);
+                _repository.SaveChanges();
 
-		public IEnumerable<ReservationDto> GetReservation()
-		{
-			var reservation = _repository.GetAll();
-			var reservationsDto = reservation.Select(f => f.MapOne<ReservationDto>());
-			return reservationsDto;
-		}
+                var reservationToReturnDTO = reservation.MapOne<ReservationToReturnDto>();
 
-		public ReservationDto Update(int id, ReservationDto reservationDto)
-		{
-			var ReservationDt = _repository.GetByID(id);
+                return reservationToReturnDTO;
+            }
+            // what is the best way to return [null or throw exception] and Is there way to stop request and return a message 
+            return null;
 
-			if (ReservationDt is not null)
-			{
-				var reservation = ReservationDt.MapOne<Reservation>();
+        }
+        public ReservationToReturnDto Update(int id, ReservationDto reservationDto, double totalPrice)
+        {
+            var ReservationDt = _repository.GetByID(id);
 
-				reservation.Id = id;
-				reservation.Check_in_date = ReservationDt.Check_in_date;
-				reservation.Check_out_date = ReservationDt.Check_out_date;
-				reservation.Total_Price = ReservationDt.Total_Price;
+            if (ReservationDt is not null)
+            {
+                var reservation = ReservationDt.MapOne<Reservation>();
 
-				_repository.Update(reservation);
-				_repository.SaveChanges();
+                reservation.Id = id;
+                reservation.Check_in_date = ReservationDt.Check_in_date;
+                reservation.Check_out_date = ReservationDt.Check_out_date;
 
-				var reservationsDto = reservation.MapOne<ReservationDto>();
+                var stayingDays = (reservationDto.Check_out_date - reservationDto.Check_in_date).Days;
+                stayingDays = stayingDays == 0 ? 1 : stayingDays;
+                reservation.Total_Price = totalPrice * stayingDays;
+                reservation.UserId = 3;
 
-				return reservationsDto;
-			}
-			return null;
-		}
+                _repository.Update(reservation);
+                _repository.SaveChanges();
 
-		void IReservationService.Add(ReservationDto reservationDto)
-		{
-			var reservation = reservationDto.MapOne<Reservation>();
+                var reservationToReturnDTO = reservation.MapOne<ReservationToReturnDto>();
 
-			_repository.Add(reservation);
-			_repository.SaveChanges();
-		}
+                return reservationToReturnDTO;
+            }
+            return null;
+        }
 
+        public bool CancelReservation(int reservationId)
+        {
+            var reservation = _repository.GetByID(reservationId);
 
+            if (reservation == null)
+                return false;
 
-		public IEnumerable<RoomToReturnDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
-		{
+            if (reservation.ReservationStatus == ReservationStatus.CheckedOut || reservation.ReservationStatus == ReservationStatus.Cancelled)
+                return false;
 
-			var reservedRoomIds = GetReservedRoomIds(checkInDate, checkOutDate);
+            reservation.ReservationStatus = ReservationStatus.Cancelled;
+            _repository.Update(reservation);
 
-			var availableRooms = GetAvailableRooms(reservedRoomIds);
+            _repository.SaveChanges();
 
-			var roomsToReturnDto = availableRooms.Map<RoomToReturnDto>();
-			return roomsToReturnDto; ;
-		}
+            return true;
+        }
 
-		private List<int> GetReservedRoomIds(DateTime checkInDate, DateTime checkOutDate)
-		{
-			var reservedRoomIds = _repository.GetAll()
-				 .Where(r => r.Check_in_date < checkOutDate && r.Check_out_date > checkInDate)
-				 .Select(r => r.Room.Id)
-				 .Distinct()
-				 .ToList();
+        public IEnumerable<RoomToReturnDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
+        {
+            var reservedRoomIds = GetReservedRoomIds(checkInDate, checkOutDate);
 
-			return reservedRoomIds;
-		}
+            var availableRooms = GetAvailableRooms(reservedRoomIds);
 
-		private IQueryable<Room> GetAvailableRooms(List<int> reservedRoomIds)
-		{
-			var availableRooms = _repositoryRoom.GetAll()
-											.Where(r => !reservedRoomIds.Contains(r.Id));
+            return availableRooms;
+        }
+        public bool IsRoomAvailable(int roomId, DateTime checkInDate, DateTime checkOutDate)
+        {
+            var overlappingReservations = _repository.GetAll()
+                                                     .Any(r =>
+                                                     r.RoomId == roomId &&
+                                                     r.Check_in_date < checkOutDate &&
+                                                     r.Check_out_date > checkInDate &&
+                                                     r.ReservationStatus != ReservationStatus.Cancelled);
 
-			return availableRooms;
-		}
+            return !overlappingReservations;
+        }
 
-		List<ReservationDto> IReservationService.GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
-		{
-			throw new NotImplementedException();
-		}
+        #region Private Method To Get Available Rooms
 
+        private List<int> GetReservedRoomIds(DateTime checkInDate, DateTime checkOutDate)
+        {
+            var reservedRoomIds = _repository.GetAll()
+                 .Where(r => r.Check_in_date < checkOutDate && r.Check_out_date > checkInDate)
+                 .Select(r => r.Room.Id)
+                 .Distinct()
+                 .ToList();
 
+            return reservedRoomIds;
+        }
 
-		//public List<ReservationDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
-		//{
-		//	var availableRooms = _repositoryRoom.GetAll()
-		//		.Where(room => !_repository.GetAll()
-		//			.Any(r => r.Room.Id == room.Id && r.Check_in_date < checkOutDate && r.Check_out_date > checkInDate))
-		//		.Select(room => new ReservationDto
-		//		{
-		//			Check_in_date = DateTime.MinValue,
+        private IEnumerable<RoomToReturnDto> GetAvailableRooms(List<int> reservedRoomIds)
+        {
+            var availableRooms = _roomService.GetAll()
+                                             .Where(r => !reservedRoomIds.Contains(r.Id));
+            return availableRooms;
+        }
 
-		//			Check_out_date = DateTime.MinValue,
-		//			Total_Price = 0,
-		//			RoomDTO = new List<RoomDTO> { room.MapOne<RoomDTO>() }
-		//		})
-		//		.ToList();
+        #endregion
 
-		//	if (availableRooms.Count > 0)
-		//	{
-		//		return availableRooms;
-		//	}
-		//	else
-		//	{
-		//		return new List<ReservationDto> { new ReservationDto { RoomDTO = new List<RoomDTO> { new RoomDTO { RoomType = "لا توجد غرف متاحة في هذه الفترة" } } } };
-		//	}
-		//}
-
-
-
-		///api/Reservation/SearchRoom?checkInDate=2024-08-01T14:00:00&checkOutDate=2024-08-05T11:00:00
-		//public List<int> GetReservedRoomIds(DateTime checkInDate, DateTime checkOutDate)
-		//{
-		//	var reservedRoomIds = _repository.GetAll()
-		//		.Where(r => r.Check_in_date < checkOutDate && r.Check_out_date > checkInDate)
-		//		.Select(r => r.Room.Id)
-		//		.Distinct()
-		//		.ToList();
-
-		//	return reservedRoomIds;
-		//}
-
-	}
-	}
+    }
+}

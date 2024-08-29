@@ -24,6 +24,8 @@ public class Repository<T> : IRepository<T> where T : BaseModel
     {
         return _context.Set<T>().FirstOrDefault(x => x.Id == id && !x.IsDeleted)!;
     }
+
+
     public T GetWithTrackinByID(int id)
     {
         return _context.Set<T>()
@@ -75,5 +77,4 @@ public class Repository<T> : IRepository<T> where T : BaseModel
     {
         _context.SaveChanges();
     }
-
 }

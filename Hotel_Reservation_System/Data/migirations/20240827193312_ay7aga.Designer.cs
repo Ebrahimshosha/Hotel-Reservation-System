@@ -4,16 +4,19 @@ using Hotel_Reservation_System.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Hotel_Reservation_System.Data.Migirations
+namespace Hotel_Reservation_System.Data.migirations
 {
     [DbContext(typeof(StoreContext))]
-    partial class StoreContextModelSnapshot : ModelSnapshot
+    [Migration("20240827193312_ay7aga")]
+    partial class ay7aga
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +56,7 @@ namespace Hotel_Reservation_System.Data.Migirations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("FacilityId")
+                    b.Property<int>("FacilitiesId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
@@ -64,7 +67,7 @@ namespace Hotel_Reservation_System.Data.Migirations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FacilityId");
+                    b.HasIndex("FacilitiesId");
 
                     b.HasIndex("RoomId");
 
@@ -202,9 +205,8 @@ namespace Hotel_Reservation_System.Data.Migirations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("ReservationStatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ReservationStatus")
+                        .HasColumnType("int");
 
                     b.Property<int>("RoomId")
                         .HasColumnType("int");
@@ -355,9 +357,9 @@ namespace Hotel_Reservation_System.Data.Migirations
 
             modelBuilder.Entity("Hotel_Reservation_System.Models.FacilityRoom", b =>
                 {
-                    b.HasOne("Hotel_Reservation_System.Models.Facility", "Facility")
+                    b.HasOne("Hotel_Reservation_System.Models.Facility", "Facilities")
                         .WithMany("FacilityRooms")
-                        .HasForeignKey("FacilityId")
+                        .HasForeignKey("FacilitiesId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -367,7 +369,7 @@ namespace Hotel_Reservation_System.Data.Migirations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Facility");
+                    b.Navigation("Facilities");
 
                     b.Navigation("Room");
                 });

@@ -1,16 +1,17 @@
 ﻿
 
+using Hotel_Reservation_System.Exceptions;
+using Hotel_Reservation_System.Exceptions.Error;
+
 namespace Hotel_Reservation_System.Services.RoomService;
 
 public class RoomService : IRoomService
 {
-    private readonly IRepository<Room> _repository;
-    private readonly IRepository<Reservation> _reservationRepository;
+    private readonly IRoomRepository _repository;
 
-    public RoomService(IRepository<Room> repository, IRepository<Reservation> ReservationRepository)
+    public RoomService(IRoomRepository _repository)
     {
-        _repository = repository;
-        _reservationRepository = ReservationRepository;
+        this._repository = _repository;
     }
 
     public IEnumerable<RoomToReturnDto> GetAll()
@@ -30,7 +31,6 @@ public class RoomService : IRoomService
     public async Task<RoomToReturnDto> AddAsync(RoomDTO roomDTO)
     {
         var room = roomDTO.MapOne<Room>();
-
         room = _repository.Add(room);
         _repository.SaveChanges();
 
@@ -68,35 +68,22 @@ public class RoomService : IRoomService
         }
         return false;
     }
-
-
-    public IEnumerable<RoomToReturnDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
+    public double CalculateTotalPrice(int roomId)
     {
+        Room room = _repository.GetByIDWithInclude(roomId);
 
-        var reservedRoomIds = GetReservedRoomIds(checkInDate, checkOutDate);
+        if (room == null)
+        {
+            throw new BusinessException(ErrorCode.ResourceNotFound, "Room is not found");
+        }
 
-        var availableRooms = GetAvailableRooms(reservedRoomIds);
+        double totalPrice = room.Price;
+        var Roomfacilities = room.FacilityRoom.Where(fe=>!fe.IsDeleted).ToList();
+        foreach (var facilityRoom in Roomfacilities)
+        {
+            totalPrice += facilityRoom.Facility.price;
+        }
 
-        var roomsToReturnDto = availableRooms.Map<RoomToReturnDto>();
-        return roomsToReturnDto; ;
-    }
-
-    private List<int> GetReservedRoomIds(DateTime checkInDate, DateTime checkOutDate )
-    {
-       var reservedRoomIds = _reservationRepository.GetAll()
-            .Where(r => r.Check_in_date < checkOutDate && r.Check_out_date > checkInDate)
-            .Select(r => r.Room.Id)
-            .Distinct()
-            .ToList();
-
-        return reservedRoomIds;
-    }
-
-    private IQueryable<Room> GetAvailableRooms(List<int> reservedRoomIds)
-    {
-        var availableRooms = _repository.GetAll()
-                                        .Where(r => !reservedRoomIds.Contains(r.Id));
-
-        return availableRooms;
+        return totalPrice;
     }
 }

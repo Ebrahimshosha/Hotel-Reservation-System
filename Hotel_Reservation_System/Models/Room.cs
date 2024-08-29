@@ -2,7 +2,6 @@
 
 public class Room: BaseModel
 {
- 
 	public double Price { get; set; }
     public RoomType RoomType { get; set; }    
     public string Description { get; set; } = string.Empty;

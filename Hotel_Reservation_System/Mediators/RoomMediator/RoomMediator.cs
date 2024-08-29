@@ -1,6 +1,7 @@
 ﻿
 using Hotel_Reservation_System.DTO.Room;
 using Hotel_Reservation_System.Models;
+using Hotel_Reservation_System.Services.ReservationService;
 using Hotel_Reservation_System.ViewModels.CreateImagesViewModel;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -11,17 +12,20 @@ public class RoomMediator : IRoomMediator
     private readonly IRoomService _roomService;
     private readonly IRoomImagesServices _roomImagesServices;
     private readonly IRoomFacilityService _roomFacilityService;
+    private readonly IReservationService _reservationService;
 
     public RoomMediator
     (
         IRoomService roomService,
         IRoomImagesServices roomImagesServices,
-        IRoomFacilityService roomFacilityService
+        IRoomFacilityService roomFacilityService,
+        IReservationService reservationService
     )
     {
         _roomService = roomService;
         _roomImagesServices = roomImagesServices;
         _roomFacilityService = roomFacilityService;
+        _reservationService = reservationService;
     }
     public IEnumerable<RoomToReturnDto> GetAll()
     {
@@ -112,7 +116,7 @@ public class RoomMediator : IRoomMediator
 
     public IEnumerable<RoomToReturnDto> ViewRoomAvailability(DateTime checkInDate, DateTime checkOutDate)
     {
-        var roomsToReturnDto = _roomService.GetAvailableRooms(checkInDate, checkOutDate);
+        var roomsToReturnDto = _reservationService.GetAvailableRooms(checkInDate, checkOutDate);
         return roomsToReturnDto;
     }
 }

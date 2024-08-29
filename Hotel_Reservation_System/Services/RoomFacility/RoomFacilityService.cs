@@ -15,14 +15,14 @@ public class RoomFacilityService : IRoomFacilityService
 
     public List<int> GetFacilityIdsByRoomId(int roomId)
     {
-        return _repository.Get(rf => rf.RoomId == roomId).Select(rf => rf.FacilitiesId).ToList();
+        return _repository.Get(rf => rf.RoomId == roomId).Select(rf => rf.FacilityId).ToList();
     }
 
     public List<int> AddRoomFacility(int roomId, List<int> roomFacilityIds)
     {
         foreach (var id in roomFacilityIds)
         {
-            _repository.Add(new FacilityRoom { RoomId = roomId, FacilitiesId = id });
+            _repository.Add(new FacilityRoom { RoomId = roomId, FacilityId = id });
         }
         _repository.SaveChanges();
 
@@ -47,7 +47,7 @@ public class RoomFacilityService : IRoomFacilityService
     {
         bool hasFacilitiesIds = FacilitiesIds != null && FacilitiesIds.Count > 0;
 
-        var roomFacilities = _repository.Get(r => r.RoomId == RoomId && (!hasFacilitiesIds || FacilitiesIds!.Contains(r.FacilitiesId))).ToList();
+        var roomFacilities = _repository.Get(r => r.RoomId == RoomId && (!hasFacilitiesIds || FacilitiesIds!.Contains(r.FacilityId))).ToList();
 
         if (roomFacilities.Count == 0) { return false; }
 

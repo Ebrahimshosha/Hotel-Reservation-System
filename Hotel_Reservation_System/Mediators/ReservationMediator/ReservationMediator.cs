@@ -5,70 +5,60 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Hotel_Reservation_System.Mediators.ReservationMediator
 {
-	public class ReservationMediator : IReservationMediator
-	{
+    public class ReservationMediator : IReservationMediator
+    {
+        private readonly IReservationService _reservationService;
+        private readonly IRoomService _roomService;
 
-		private readonly IReservationService _reservationService;
+        public ReservationMediator(IReservationService reservationService, IRoomService roomService)
+        {
+            _reservationService = reservationService;
+            _roomService = roomService;
+        }
 
-		public ReservationMediator(IReservationService reservationService)
-		{
-			_reservationService = reservationService;
-		}
+        public ReservationToReturnDto GetById(int id)
+        {
+            var reservationToReturnDto = _reservationService.GetById(id);
 
-		public void Add(ReservationDto reservationDto)
-		{
-			_reservationService.Add(reservationDto);
- 
-		}
+            return reservationToReturnDto;
+        }
 
+        public IEnumerable<ReservationToReturnDto> GetAllReservation()
+        {
+            var reservationsToReturnDto = _reservationService.GetAllReservation();
 
+            return reservationsToReturnDto;
+        }
+        public ReservationToReturnDto Add(ReservationDto reservationDto)
+        {
+            var totalPrice = _roomService.CalculateTotalPrice(reservationDto.RoomId);
+            var reservationToReturnDto = _reservationService.Add(reservationDto, totalPrice);
 
-		public ReservationDto Update(int id, ReservationDto reservationDto)
-		{
-			var reservationrDto = reservationDto.MapOne<ReservationDto>();
+            return reservationToReturnDto;
+        }
 
-			var reservationsDto = _reservationService.Update(id, reservationrDto);
+        public ReservationToReturnDto Update(int id, ReservationDto reservationDto)
+        {
+            var totalPrice = _roomService.CalculateTotalPrice(reservationDto.RoomId);
+            var reservationToReturnDto = _reservationService.Update(id, reservationDto, totalPrice);
 
-			return reservationsDto;
-		}
+            return reservationToReturnDto;
+        }
 
-		ReservationDto IReservationMediator.GetById(int id)
-		{
-			var reservationsDto = _reservationService.GetById(id);
-			return reservationsDto;
-		}
-		 
-		public IEnumerable<ReservationDto> getAllReservation()
-		{
-			var reservationsDto = _reservationService.GetReservation();
-			return reservationsDto;
-		}
+        public bool CancelReservation(int id)
+        {
+            var facilty = _reservationService.GetById(id);
 
-
-		 
-
-		 
-
-		public bool DeleteReservation(int id)
-		{
-			var facilty = _reservationService.GetById(id);
-			if (facilty is not null)
-			{
-				_reservationService.Delete(id);
-				return true;
-			}
-			return false;
-		}
-
-		public List<ReservationDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
-		{
-		
-			return _reservationService.GetAvailableRooms(checkInDate, checkOutDate);
-
-		}
-
-		 
-	}
-
+            if (facilty is not null)
+            {
+                var isCanceled = _reservationService.CancelReservation(id);
+                if (isCanceled)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
 }
 

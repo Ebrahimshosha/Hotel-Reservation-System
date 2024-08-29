@@ -2,17 +2,13 @@
 
 namespace Hotel_Reservation_System.Mediators.ReservationMediator
 {
-	public interface IReservationMediator
-	{
-  
-		void Add(ReservationDto ReservationDto);
+    public interface IReservationMediator
+    {
+        ReservationToReturnDto GetById(int id);
+        IEnumerable<ReservationToReturnDto> GetAllReservation();
+        ReservationToReturnDto Add(ReservationDto reservationDto);
+        ReservationToReturnDto Update(int id, ReservationDto reservationDto);
+        bool CancelReservation(int id);
 
-		IEnumerable<ReservationDto> getAllReservation();
-		ReservationDto GetById(int id);
-		ReservationDto Update(int id, ReservationDto reservationDto);
-		bool DeleteReservation(int id);
-
-		List<ReservationDto> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate);
-
-	}
+    }
 }

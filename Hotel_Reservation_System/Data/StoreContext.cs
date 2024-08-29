@@ -7,14 +7,6 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 
 namespace Hotel_Reservation_System.Data;
-
-
-
-
-
-
-
-
  
 	public class StoreContextFactory : IDesignTimeDbContextFactory<StoreContext>
 	{
@@ -34,20 +26,12 @@ namespace Hotel_Reservation_System.Data;
 		}
 	}
 
-
-
-
-
 public class StoreContext : DbContext
 {
     public StoreContext(DbContextOptions<StoreContext> options) : base(options)
     {
         ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
-
-	
-
-
 
 	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -64,8 +48,6 @@ public class StoreContext : DbContext
         {
             relationship.DeleteBehavior = DeleteBehavior.Restrict;
         }
-
-		 
 	}
 
     public DbSet<Facility> Facilities { get; set; }

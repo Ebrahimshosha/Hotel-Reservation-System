@@ -1,11 +1,7 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
-=======
-    "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
->>>>>>> ce5c12a4ad7eb3d2a391400a5e261413b913bf81
   },
   "projects": {
     "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {
@@ -13,15 +9,9 @@
       "restore": {
         "projectUniqueName": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
         "projectName": "Hotel_Reservation_System",
-<<<<<<< HEAD
         "projectPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
         "packagesPath": "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\",
         "outputPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
-=======
-        "projectPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-        "packagesPath": "C:\\Users\\amira maher\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
->>>>>>> ce5c12a4ad7eb3d2a391400a5e261413b913bf81
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ibrahim shosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,11 +106,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
->>>>>>> ce5c12a4ad7eb3d2a391400a5e261413b913bf81
         }
       }
     }

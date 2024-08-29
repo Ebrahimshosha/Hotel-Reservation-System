@@ -1,71 +1,66 @@
 ﻿using Hotel_Reservation_System.DTO.Reservation;
 using Hotel_Reservation_System.Exceptions.Error;
 using Hotel_Reservation_System.Mediators.ReservationMediator;
+using Hotel_Reservation_System.ViewModels.Reservation;
 using Hotel_Reservation_System.ViewModels.ResultViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hotel_Reservation_System.Controllers
 {
+    public class ReservationsController : BaseApiController
+    {
+        private readonly IReservationMediator _mediator;
 
- 	public class ReservationController : BaseApiController
-	{
-		private readonly IReservationMediator _mediator;
+        public ReservationsController(IReservationMediator mediator)
+        {
+            _mediator = mediator;
+        }
 
-		public ReservationController(IReservationMediator mediator)
-		{
-			_mediator = mediator;
-		}
-		 
-		//2024-08-23T14:30:00Z
+        [HttpGet("{id}")]
+        public ResultViewModel<ReservationToReturnDto> ViewReservationDetails([FromRoute] int id)
+        {
+            var reservationDto = _mediator.GetById(id);
+            return ResultViewModel<ReservationToReturnDto>.Sucess(reservationDto);
+        }
 
-		[HttpPost("AddReservation")]
- 		public ResultViewModel<bool> AddReservation([FromBody] ReservationDto reservationDto)
-		{
-			_mediator.Add(reservationDto);
-			return ResultViewModel<bool>.Sucess(true);
-		}
-		[HttpGet("GetAllReservation")]
-		public IActionResult GetAllReservation()
-		{
-			var facilitiesToReturnDto = _mediator.getAllReservation();
-			return Ok(facilitiesToReturnDto);
-		}
-		[HttpGet("{id}")]
-		public ResultViewModel<ReservationDto> GetReservationsById([FromRoute] int id)
-		{
-			var reservationDto = _mediator.GetById(id);
-			return ResultViewModel<ReservationDto>.Sucess(reservationDto);
-		}
+        [HttpGet("")]
+        public IActionResult GetAllReservation()
+        {
+            var facilitiesToReturnDto = _mediator.GetAllReservation();
+            return Ok(facilitiesToReturnDto);
+        }
 
+        [HttpPost("")]
+        public ResultViewModel<ReservationToReturnDto> MakeReservation([FromBody] CreateReservationViewModel viewModel)
+        {
+            var reservationDto = viewModel.MapOne<ReservationDto>();
+            var reservationToReturnDto = _mediator.Add(reservationDto);
+            if(reservationToReturnDto is null)
+            {
+                return ResultViewModel<ReservationToReturnDto>.Faliure(ErrorCode.BadRequest,"already reserved");
+            }
+            return ResultViewModel<ReservationToReturnDto>.Sucess(reservationToReturnDto);
+        }
 
-		[HttpPut("{id}")]
-		public ResultViewModel<ReservationDto> UpdateReservationDto([FromRoute] int id, [FromBody] ReservationDto reservationDto)
-		{
-			var reservationsDto = _mediator.Update(id, reservationDto);
-			return ResultViewModel<ReservationDto>.Sucess(reservationDto);
-		}
+        [HttpPut("{id}")]
+        public ResultViewModel<ReservationToReturnDto> UpdateReservationDto([FromRoute] int id, [FromBody] CreateReservationViewModel viewModel)
+        {
+            var reservationDto = viewModel.MapOne<ReservationDto>();
+            var reservationToReturnDto = _mediator.Update(id, reservationDto);
 
-		[HttpDelete("{id}")]
-		public ResultViewModel<bool> DeleteReservation([FromRoute] int id)
-		{
-			var isDeleted = _mediator.DeleteReservation(id);
+            return ResultViewModel<ReservationToReturnDto>.Sucess(reservationToReturnDto);
+        }
 
-			if (isDeleted)
-			{
+        [HttpDelete("{id}")]
+        public ResultViewModel<bool> CancelReservation([FromRoute] int id)
+        {
+            var isDeleted = _mediator.CancelReservation(id);
 
-				return ResultViewModel<bool>.Sucess(true);
-			}
-			return ResultViewModel<bool>.Faliure(ErrorCode.ResourceNotFound,$" Reservation {id} NotFound") ;
-		}
-
-
-		[HttpGet("SearchRoom")]
-		public ResultViewModel<List<ReservationDto>> SearchRoom(DateTime checkInDate, DateTime checkOutDate)
-		{
-			var availableRooms = _mediator.GetAvailableRooms(checkInDate, checkOutDate);
-			return ResultViewModel<List<ReservationDto>>.Sucess(availableRooms);
-		}
-
-
-	}
+            if (isDeleted)
+            {
+                return ResultViewModel<bool>.Sucess(true);
+            }
+            return ResultViewModel<bool>.Faliure(ErrorCode.ResourceNotFound, $" Reservation {id} NotFound");
+        }
+    }
 }
