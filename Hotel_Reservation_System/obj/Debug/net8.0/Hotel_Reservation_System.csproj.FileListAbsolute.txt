@@ -141,3 +141,10 @@ E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel
 E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\obj\Debug\net8.0\Hotel_Reservation_System.pdb
 E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\obj\Debug\net8.0\Hotel_Reservation_System.genruntimeconfig.cache
 E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\obj\Debug\net8.0\ref\Hotel_Reservation_System.dll
+E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\.Net Project\Hotel Reservation System\Hotel-Reservation-System Solution\Hotel-Reservation-System\Hotel_Reservation_System\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

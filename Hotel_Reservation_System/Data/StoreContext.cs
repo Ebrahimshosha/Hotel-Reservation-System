@@ -56,9 +56,6 @@ public class StoreContext : DbContext
     public DbSet<OfferRoom> offerRooms { get; set; }
     public DbSet<Payment> Payments { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
-    public DbSet<Role> Roles { get; set; }
     public DbSet<Room> Rooms { get; set; }
     public DbSet<FacilityRoom> RoomFacilities { get; set; }
-    public DbSet<User> Users { get; set; }
-    public DbSet<UserRole> UserRoles { get; set; }
 }

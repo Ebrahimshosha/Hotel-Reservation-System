@@ -7,19 +7,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Hotel_Reservation_System.Controllers
 {
-    public class OfferController : BaseApiController
+    public class OffersController : BaseApiController
     {
-
         private readonly IOfferMediator _offerMediator;
 
-        public OfferController(IOfferMediator offerMediator)
+        public OffersController(IOfferMediator offerMediator)
         {
             _offerMediator = offerMediator;
         }
 
-    
-
-        [HttpPost("Offer")]
+        [HttpPost("")]
         public async Task<ResultViewModel<OfferViewModel>> AddOffer([FromForm] CreateOfferViewModel viewModel)
         {
             var createOfferDto = viewModel.MapOne<AddOfferDto>();
@@ -27,8 +24,6 @@ namespace Hotel_Reservation_System.Controllers
             var offerViewModel = offerToReturnDto.MapOne<OfferViewModel>();
             return ResultViewModel<OfferViewModel>.Sucess(offerViewModel);
         }
-
-      
 
         [HttpPut("{id}")]
         public async Task<ResultViewModel<OfferViewModel>> UpdateRoom([FromRoute] int id, [FromForm] CreateOfferViewModel viewModel)
@@ -53,6 +48,5 @@ namespace Hotel_Reservation_System.Controllers
 
             return ResultViewModel<bool>.Faliure(ErrorCode.ResourceNotFound, "Offer is not existed");
         }
-
     }
 }

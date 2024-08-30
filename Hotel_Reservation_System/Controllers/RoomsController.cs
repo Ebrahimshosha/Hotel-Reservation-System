@@ -4,9 +4,11 @@ using Hotel_Reservation_System.Exceptions.Error;
 using Hotel_Reservation_System.ViewModels.CreateImagesViewModel;
 using Hotel_Reservation_System.ViewModels.ResultViewModel;
 using Hotel_Reservation_System.ViewModels.Room;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel_Reservation_System.Controllers;
 
+[Authorize]
 public class RoomsController : BaseApiController
 {
     private readonly IRoomMediator _mediator;
