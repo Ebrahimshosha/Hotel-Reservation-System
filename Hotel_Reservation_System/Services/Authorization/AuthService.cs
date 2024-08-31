@@ -3,10 +3,16 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Hotel_Reservation_System.Services.Authorization;
 
-public class AuthService(UserManager<ApplicationUser> userManager, IJwtProvider jwtProvider) : IAuthService
+public class AuthService : IAuthService
 {
-    private readonly UserManager<ApplicationUser> _userManager = userManager;
-    private readonly IJwtProvider _jwtProvider = jwtProvider;
+    private readonly UserManager<ApplicationUser> _userManager;
+    private readonly IJwtProvider _jwtProvider;
+
+    public AuthService(UserManager<ApplicationUser> userManager, IJwtProvider jwtProvider)
+    {
+        _userManager = userManager;
+        _jwtProvider = jwtProvider;
+    }
 
     public async Task<AuthResponse?> GetTokenAsync(string email, string password, CancellationToken cancellationToken = default)
     {

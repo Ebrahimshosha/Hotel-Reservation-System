@@ -6,10 +6,15 @@ using System.Text;
 
 namespace Hotel_Reservation_System.Services.Authorization;
 
-public class JwtProvider(IOptions<JwtOptions> options) : IJwtProvider
+public class JwtProvider : IJwtProvider
 {
     // Ioption<className> --> To Read Data from settings[configuration]
-    private readonly JwtOptions _options = options.Value;
+    private readonly JwtOptions _options;
+
+    public JwtProvider(IOptions<JwtOptions> options)
+    {
+        _options = options.Value;
+    }
 
     public (string token, int expiresIn) GenerateToken(ApplicationUser user)
     {
