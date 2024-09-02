@@ -20,7 +20,7 @@ public class RoomProfile : Profile
 
         CreateMap<Room, RoomToReturnDto>()
             .ForMember(d => d.Images, o => o.MapFrom(s => s.Images.Where(x => !x.IsDeleted).Select(i => i.Image_Url).ToList()))
-            .ForMember(d => d.FacilitiesIds, o => o.MapFrom(s => s.FacilityRoom.Where(x => !x.IsDeleted).Select(i => i.FacilityId).ToList()));
+            .ForMember(d => d.FacilitiesIds, o => o.MapFrom(s => s.FacilityRooms.Where(x => !x.IsDeleted).Select(i => i.FacilityId).ToList()));
            
 
         CreateMap<RoomToReturnDto, RoomViewModel>()

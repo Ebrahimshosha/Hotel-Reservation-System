@@ -18,13 +18,15 @@ public class JwtProvider : IJwtProvider
 
     public (string token, int expiresIn) GenerateToken(ApplicationUser user)
     {
-        Claim[] claims = [
-            new(JwtRegisteredClaimNames.Sub, user.Id),
+        Claim[] claims = new Claim[]
+        {
+             new(JwtRegisteredClaimNames.Sub, user.Id),
             new(JwtRegisteredClaimNames.Email, user.Email!),
             new(JwtRegisteredClaimNames.GivenName, user.FirstName),
             new(JwtRegisteredClaimNames.FamilyName, user.LastName),
             new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-        ];
+        };
+
 
         var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.Key));
 

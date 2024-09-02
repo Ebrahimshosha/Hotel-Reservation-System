@@ -78,7 +78,7 @@ public class RoomService : IRoomService
         }
 
         double totalPrice = room.Price;
-        var Roomfacilities = room.FacilityRoom.Where(fe=>!fe.IsDeleted).ToList();
+        var Roomfacilities = room.FacilityRooms.Where(fe=>!fe.IsDeleted).ToList();
         foreach (var facilityRoom in Roomfacilities)
         {
             totalPrice += facilityRoom.Facility.price;

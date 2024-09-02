@@ -13,7 +13,7 @@ public class RoomRepository : Repository<Room>, IRoomRepository
     public Room GetByIDWithInclude(int id)
     {
         return _context.Set<Room>()
-                       .Include(r => r.FacilityRoom)
+                       .Include(r => r.FacilityRooms)
                        .ThenInclude(r => r.Facility)
                        .FirstOrDefault(x => x.Id == id && !x.IsDeleted)!;
     }

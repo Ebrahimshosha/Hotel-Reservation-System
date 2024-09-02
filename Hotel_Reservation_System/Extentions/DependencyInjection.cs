@@ -69,11 +69,12 @@ public static class DependencyInjection
             options.Password.RequireDigit = false;
             options.Password.RequireLowercase = false;
             options.Password.RequireUppercase = false;
-            options.Password.RequireNonAlphanumeric = false; 
-            options.Password.RequiredLength = 8; 
-            options.Password.RequiredUniqueChars = 1; 
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequiredLength = 8;
+            options.Password.RequiredUniqueChars = 1;
         })
-                .AddEntityFrameworkStores<AppIdentityDbContext>();
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
 
         services.AddSingleton<IJwtProvider, JwtProvider>();
 

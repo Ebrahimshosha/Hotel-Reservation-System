@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\data\\migirations\\20240828120315_addreservationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:data\\migirations\\20240828120315_addreservationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\data\\migirations\\20240902120646_update roomfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:data\\migirations\\20240902120646_update roomfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\services\\authorization\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\authorization\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\data\\migirations\\20240902120646_update roomfacility.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:data\\migirations\\20240902120646_update roomfacility.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\services\\authorization\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\authorization\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\data\\migirations\\20240816054947_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:data\\migirations\\20240816054947_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\services\\roomservice\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\roomservice\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\profiles\\room\\roomprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:profiles\\room\\roomprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\facilityroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\facilityroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\services\\authorization\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\authorization\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\extentions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation system\\hotel-reservation-system solution\\hotel-reservation-system\\hotel_reservation_system\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 26,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -64,104 +84,172 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FeedBack.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\FeedBack.cs",
-              "RelativeDocumentMoniker": "Models\\FeedBack.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\FeedBack.cs",
-              "RelativeToolTip": "Models\\FeedBack.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:19:07.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Offer.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Offer.cs",
-              "RelativeDocumentMoniker": "Models\\Offer.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Offer.cs",
-              "RelativeToolTip": "Models\\Offer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:19:01.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\Authorization\\AuthService.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\AuthService.cs",
-              "RelativeToolTip": "Services\\Authorization\\AuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:15:41.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JwtProvider.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\JwtProvider.cs",
-              "RelativeDocumentMoniker": "Services\\Authorization\\JwtProvider.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\JwtProvider.cs",
-              "RelativeToolTip": "Services\\Authorization\\JwtProvider.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:12:24.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "JwtOptions.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\JwtOptions.cs",
-              "RelativeDocumentMoniker": "Services\\Authorization\\JwtOptions.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\JwtOptions.cs",
-              "RelativeToolTip": "Services\\Authorization\\JwtOptions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:12:19.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Controllers\\RoomsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T01:08:19.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountsController.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "Controllers\\AccountsController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAtwCoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T23:06:23.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Extentions\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Extentions\\DependencyInjection.cs",
               "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Extentions\\DependencyInjection.cs",
               "RelativeToolTip": "Extentions\\DependencyInjection.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAxwEkAAAA2AAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAEwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T15:16:59.316Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240828120315_AddReservationStatus.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240828120315_AddReservationStatus.cs",
+              "RelativeDocumentMoniker": "Data\\migirations\\20240828120315_AddReservationStatus.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240828120315_AddReservationStatus.cs",
+              "RelativeToolTip": "Data\\migirations\\20240828120315_AddReservationStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:07:43.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240902120646_Update RoomFacility.Designer.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240902120646_Update RoomFacility.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\migirations\\20240902120646_Update RoomFacility.Designer.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240902120646_Update RoomFacility.Designer.cs",
+              "RelativeToolTip": "Data\\migirations\\20240902120646_Update RoomFacility.Designer.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAvwA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:07:30.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240902120646_Update RoomFacility.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240902120646_Update RoomFacility.cs",
+              "RelativeDocumentMoniker": "Data\\migirations\\20240902120646_Update RoomFacility.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240902120646_Update RoomFacility.cs",
+              "RelativeToolTip": "Data\\migirations\\20240902120646_Update RoomFacility.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:06:54.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240816054947_initial.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240816054947_initial.cs",
+              "RelativeDocumentMoniker": "Data\\migirations\\20240816054947_initial.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Data\\migirations\\20240816054947_initial.cs",
+              "RelativeToolTip": "Data\\migirations\\20240816054947_initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:06:25.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomRepository.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Repositories\\RoomRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoomRepository.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Repositories\\RoomRepository.cs",
+              "RelativeToolTip": "Repositories\\RoomRepository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAWwA8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:06:13.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\RoomService\\RoomService.cs",
+              "RelativeDocumentMoniker": "Services\\RoomService\\RoomService.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\RoomService\\RoomService.cs",
+              "RelativeToolTip": "Services\\RoomService\\RoomService.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAWwFAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:06:06.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomProfile.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Profiles\\Room\\RoomProfile.cs",
+              "RelativeDocumentMoniker": "Profiles\\Room\\RoomProfile.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Profiles\\Room\\RoomProfile.cs",
+              "RelativeToolTip": "Profiles\\Room\\RoomProfile.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAawBYAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:05:54.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Room.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Models\\Room.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Room.cs",
+              "RelativeToolTip": "Models\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:01:00.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FacilityRoom.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\FacilityRoom.cs",
+              "RelativeDocumentMoniker": "Models\\FacilityRoom.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\FacilityRoom.cs",
+              "RelativeToolTip": "Models\\FacilityRoom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:00:53.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Facility.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Facility.cs",
+              "RelativeDocumentMoniker": "Models\\Facility.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Facility.cs",
+              "RelativeToolTip": "Models\\Facility.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:00:41.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JwtProvider.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\JwtProvider.cs",
+              "RelativeDocumentMoniker": "Services\\Authorization\\JwtProvider.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\Authorization\\JwtProvider.cs",
+              "RelativeToolTip": "Services\\Authorization\\JwtProvider.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T11:30:06.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountsController.cs",
+              "ToolTip": "E:\\.Net Project\\Hotel Reservation System\\Hotel-Reservation-System Solution\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "Controllers\\AccountsController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAEoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T10:53:01.225Z",
               "EditorCaption": ""
             }
           ]

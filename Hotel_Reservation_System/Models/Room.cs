@@ -6,5 +6,5 @@ public class Room: BaseModel
     public RoomType RoomType { get; set; }    
     public string Description { get; set; } = string.Empty;
     public ICollection<RoomImage> Images { get; set; } = new HashSet<RoomImage>();
-    public ICollection<FacilityRoom> FacilityRoom { get; set; } = new HashSet<FacilityRoom>();
+    public ICollection<FacilityRoom> FacilityRooms { get; set; } = new HashSet<FacilityRoom>();
 }
