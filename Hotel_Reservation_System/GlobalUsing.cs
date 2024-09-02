@@ -20,7 +20,6 @@ global using Hotel_Reservation_System.Middlewares;
 
 global using Hotel_Reservation_System.Models;
 global using Hotel_Reservation_System.Data;
-global using Hotel_Reservation_System.Data.migirations;
 global using Hotel_Reservation_System.Repositories;
 global using Hotel_Reservation_System.Helpers;
 

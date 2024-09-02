@@ -1,5 +1,4 @@
 ﻿
-using Hotel_Reservation_System.Data.migirations;
 using Hotel_Reservation_System.Models;
 
 namespace Hotel_Reservation_System.Services.RoomImages;
