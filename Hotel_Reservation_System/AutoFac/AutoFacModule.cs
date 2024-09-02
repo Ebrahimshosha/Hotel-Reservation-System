@@ -11,13 +11,15 @@ public class AutoFacModule : Module
     {
         builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 
+        builder.RegisterAssemblyTypes(typeof(IRoomRepository).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
+       
         builder.RegisterAssemblyTypes(typeof(IRoomMediator).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
         builder.RegisterAssemblyTypes(typeof(IFacilityMediator).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
+		builder.RegisterAssemblyTypes(typeof(IReservationMediator).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
+      
         builder.RegisterAssemblyTypes(typeof(IRoomService).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
         builder.RegisterAssemblyTypes(typeof(IFacilitiesService).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
-
         builder.RegisterAssemblyTypes(typeof(IReservationService).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
-		builder.RegisterAssemblyTypes(typeof(IReservationMediator).Assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
 
 	}
 }

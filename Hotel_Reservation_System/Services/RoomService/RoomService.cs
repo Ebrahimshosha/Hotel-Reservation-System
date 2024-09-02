@@ -1,43 +1,36 @@
 ﻿
-using AutoMapper.QueryableExtensions;
-using Hotel_Reservation_System.DTO.Room;
-using Hotel_Reservation_System.Helpers;
+
+using Hotel_Reservation_System.Exceptions;
+using Hotel_Reservation_System.Exceptions.Error;
 
 namespace Hotel_Reservation_System.Services.RoomService;
 
 public class RoomService : IRoomService
 {
-    private readonly IRepository<Room> _repository;
+    private readonly IRoomRepository _repository;
 
-    public RoomService(IRepository<Room> repository)
+    public RoomService(IRoomRepository _repository)
     {
-        _repository = repository;
+        this._repository = _repository;
     }
 
     public IEnumerable<RoomToReturnDto> GetAll()
     {
         var rooms = _repository.GetAll();
-        var roomsToReturnDto = rooms.Select(r => r.MapOne<RoomToReturnDto>());
+        var roomsToReturnDto = rooms.Map<RoomToReturnDto>();
         return roomsToReturnDto;
     }
 
     public RoomToReturnDto GetById(int id)
     {
-        var room = _repository.GetByID(id);
-        var roomToReturnDto = room.MapOne<RoomToReturnDto>();
+        var rooms = _repository.Get(r => r.Id == id);
+        var roomToReturnDto = rooms.Map<RoomToReturnDto>().FirstOrDefault()!;
         return roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> AddAsync(CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> AddAsync(RoomDTO roomDTO)
     {
-        var fileName = await DocumentSettings.UploadFileAsync(createRoomDTO.Image_Url, "Images");
-
-        var roomDTO = createRoomDTO.MapOne<RoomDTO>();
-        roomDTO.Image_Url = fileName;
-        // Is there more efficient way to mapping from CreateRoomDTO to RoomDTO in RoomMediator ?
-
         var room = roomDTO.MapOne<Room>();
-
         room = _repository.Add(room);
         _repository.SaveChanges();
 
@@ -45,18 +38,13 @@ public class RoomService : IRoomService
         return roomToReturnDto;
     }
 
-    public async Task<RoomToReturnDto> UpdateAsync(int id, CreateRoomDTO createRoomDTO)
+    public async Task<RoomToReturnDto> UpdateAsync(int id, RoomDTO roomDTO)
     {
         var roomfromdb = _repository.GetByID(id);
         if (roomfromdb is null)
         {
             return null;
         }
-        var fileName = await DocumentSettings.UploadFileAsync(createRoomDTO.Image_Url, "Images");
-
-        var roomDTO = createRoomDTO.MapOne<RoomDTO>();
-        roomDTO.Image_Url = fileName;
-        // Is there more efficient way to mapping from CreateRoomDTO to RoomDTO in RoomMediator ?
 
         var room = roomDTO.MapOne<Room>();
         room.Id = id;
@@ -80,11 +68,22 @@ public class RoomService : IRoomService
         }
         return false;
     }
-    public IEnumerable<RoomToReturnDto> GetAvailableRooms(Room room)
+    public double CalculateTotalPrice(int roomId)
     {
-        var rooms = _repository.Get(x => x.Price <= room.Price && x.IsAvailable && x.RoomType == room.RoomType);
+        Room room = _repository.GetByIDWithInclude(roomId);
 
-        var roomToReturnDto = rooms.Select(r => r.MapOne<RoomToReturnDto>());
-        return roomToReturnDto;
+        if (room == null)
+        {
+            throw new BusinessException(ErrorCode.ResourceNotFound, "Room is not found");
+        }
+
+        double totalPrice = room.Price;
+        var Roomfacilities = room.FacilityRooms.Where(fe=>!fe.IsDeleted).ToList();
+        foreach (var facilityRoom in Roomfacilities)
+        {
+            totalPrice += facilityRoom.Facility.price;
+        }
+
+        return totalPrice;
     }
 }
