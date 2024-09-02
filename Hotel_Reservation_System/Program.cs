@@ -34,10 +34,13 @@ public class Program
               .LogTo(log => Debug.WriteLine(log), LogLevel.Information)
                 .EnableSensitiveDataLogging();
         });
+
+
         builder.Services.AddSingleton<PayPalAuthService>(sp =>
         new PayPalAuthService(
         builder.Configuration["PayPal:ClientId"],
         builder.Configuration["PayPal:ClientSecret"]));
+
 
         builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
         builder.Host.ConfigureContainer<ContainerBuilder>(builder =>

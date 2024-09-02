@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Net;
 using System.Net.Http.Headers;
 using System.Text;
 
@@ -14,8 +15,8 @@ public class PayPalPaymentService
     public async Task<string> CreatePayment()
     {
         var accessToken = await _authService.GetAccessToken();
-        var client = new HttpClient();
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+        var client = new HttpClient(); 
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken); //Authorization header
 
         var payment = new
         {
@@ -27,7 +28,7 @@ public class PayPalPaymentService
                     amount = new
                     {
                         currency_code = "USD",
-                        value = "100.00" // Example amount
+                        value = "100.00" 
                     }
                 }
             },
@@ -35,6 +36,7 @@ public class PayPalPaymentService
             {
                 return_url = "https://example.com/return",
                 cancel_url = "https://example.com/cancel"
+                //these URLs are endpoints to which the user will be redirected after completing or canceling the payment
             }
         };
 

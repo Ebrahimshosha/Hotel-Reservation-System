@@ -27,7 +27,7 @@ public class PayPalAuthService
 
     private async Task Authenticate()
     {
-        var client = new HttpClient();
+        var client = new HttpClient(); // created to make the API request
         var authToken = Encoding.ASCII.GetBytes($"{_clientId}:{_clientSecret}");
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(authToken));
 

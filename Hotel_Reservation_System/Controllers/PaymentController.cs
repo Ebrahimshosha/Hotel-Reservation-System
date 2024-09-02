@@ -16,9 +16,8 @@ public class PaymentController : ControllerBase
         {
             var accessToken = await _payPalAuthService.GetAccessToken();
 
-            // Call another service to handle payment creation or handle it here
-            // For example:
             var paymentService = new PayPalPaymentService(_payPalAuthService);
+
             var paymentId = await paymentService.CreatePayment();
 
             return Ok(new { PaymentId = paymentId });
