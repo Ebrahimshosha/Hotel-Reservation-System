@@ -1,4 +1,5 @@
-﻿using Hotel_Reservation_System.DTO.Authorization;
+﻿using Hotel_Reservation_System.Consts;
+using Hotel_Reservation_System.DTO.Authorization;
 using Hotel_Reservation_System.Exceptions.Error;
 using Hotel_Reservation_System.Services.Authorization;
 using Hotel_Reservation_System.ViewModels.ResultViewModel;
@@ -41,7 +42,9 @@ public class AccountsController : BaseApiController
         var Result = await _userManager.CreateAsync(User, model.Password);
 
         if (!Result.Succeeded)
+          
             return ResultViewModel<AuthResponse>.Faliure(ErrorCode.BadRequest, "This email is already exists");
+        await _userManager.AddToRoleAsync(User, DefaultRoles.Member);
 
         var authResult = await _authService.GetTokenAsync(model.Email, model.Password);
         if (authResult is null)

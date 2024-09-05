@@ -19,22 +19,7 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
-
-        builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-        builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
-
-        ILoggerFactory MyLoggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
-        builder.Services.AddDbContext<StoreContext>(Options =>
-        {
-            Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-              .UseLoggerFactory(MyLoggerFactory)
-              .LogTo(log => Debug.WriteLine(log), LogLevel.Information)
-                .EnableSensitiveDataLogging();
-        });
-
+        builder.Services.AddDependencies(builder.Configuration);
 
         builder.Services.AddSingleton<PayPalAuthService>(sp =>
         new PayPalAuthService(
@@ -63,6 +48,7 @@ public class Program
 
         app.UseHttpsRedirection();
         app.UseStaticFiles();
+        app.UseAuthentication();
         app.UseAuthorization();
 
 

@@ -4593,34 +4593,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\lenovo\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\amira maher\\.nuget\\packages\\": {}
->>>>>>> 58a9c344401c290e9b9680396f1f6fe03f9dd16e
+    "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "projectUniqueName": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
       "projectName": "Hotel_Reservation_System",
-      "projectPath": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\source\\hotel-system\\Hotel_Reservation_System\\obj\\",
+      "projectPath": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+      "packagesPath": "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\",
+      "outputPath": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-      "projectName": "Hotel_Reservation_System",
-      "projectPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-      "packagesPath": "C:\\Users\\amira maher\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amira maher\\Desktop\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\amira maher\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 58a9c344401c290e9b9680396f1f6fe03f9dd16e
+        "C:\\Users\\Ibrahim shosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4628,6 +4613,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4642,7 +4628,9 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "default"
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4717,8 +4705,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
