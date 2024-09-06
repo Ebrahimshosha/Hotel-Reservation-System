@@ -2,5 +2,7 @@
 
 public class CreateFacilityViewModel
 {
-    public List<int> FacilitiesIds { get; set; } = null!;
+    public string Name { get; set; } = string.Empty;
+    public double price { get; set; }
+    public List<int> FacilitiesIds { get; set; }
 }
