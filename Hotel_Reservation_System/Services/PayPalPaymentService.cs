@@ -1,18 +1,22 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Net;
 using System.Net.Http.Headers;
 using System.Text;
+using static PaymentController;
 
 public class PayPalPaymentService
 {
     private readonly PayPalAuthService _authService;
 
+
     public PayPalPaymentService(PayPalAuthService authService)
     {
         _authService = authService;
+        
     }
 
-    public async Task<string> CreatePayment()
+    public async Task<object> CreatePayment(CreatePaymentViewModel viewModel)
     {
         var accessToken = await _authService.GetAccessToken();
         var client = new HttpClient(); 
@@ -28,7 +32,7 @@ public class PayPalPaymentService
                     amount = new
                     {
                         currency_code = "USD",
-                        value = "100.00" 
+                        value = viewModel.amount 
                     }
                 }
             },
@@ -46,7 +50,10 @@ public class PayPalPaymentService
         var json = await response.Content.ReadAsStringAsync();
         var paymentResult = JsonConvert.DeserializeObject<dynamic>(json);
 
-        return paymentResult.id; // Return the payment ID
+ 
+
+
+        return new { paymentResultID = paymentResult.id,payment = payment }; // Return the payment ID
     }
 
     public async Task<string> CapturePayment(string paymentId)

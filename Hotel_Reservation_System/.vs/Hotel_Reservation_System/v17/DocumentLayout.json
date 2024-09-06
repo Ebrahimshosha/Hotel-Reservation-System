@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\",
+  "WorkspaceRootPath": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation\\hotel-reservation-system\\hotel_reservation_system\\mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:mediators\\roommediator\\roommediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\el-g3brii\\source\\repos\\hotel-reservation-system\\hotel_reservation_system\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation\\hotel-reservation-system\\hotel_reservation_system\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\el-g3brii\\source\\repos\\hotel-reservation-system\\hotel_reservation_system\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation\\hotel-reservation-system\\hotel_reservation_system\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\el-g3brii\\source\\repos\\hotel-reservation-system\\hotel_reservation_system\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation\\hotel-reservation-system\\hotel_reservation_system\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\el-g3brii\\source\\repos\\hotel-reservation-system\\hotel_reservation_system\\dto\\payment\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:dto\\payment\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|e:\\.net project\\hotel reservation\\hotel-reservation-system\\hotel_reservation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\el-g3brii\\source\\repos\\hotel-reservation-system\\hotel_reservation_system\\dto\\reservation\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:dto\\reservation\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|c:\\users\\el-g3brii\\source\\repos\\hotel-reservation-system\\hotel_reservation_system\\services\\paypalpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C8B075-255A-47DE-8BE6-3FFB19A0BDCE}|Hotel_Reservation_System.csproj|solutionrelative:services\\paypalpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,96 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoomMediator.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Mediators\\RoomMediator\\RoomMediator.cs",
-              "RelativeDocumentMoniker": "Mediators\\RoomMediator\\RoomMediator.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Mediators\\RoomMediator\\RoomMediator.cs*",
-              "RelativeToolTip": "Mediators\\RoomMediator\\RoomMediator.cs*",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAACkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T13:17:26.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Controllers\\RoomsController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAAAoAAAACAAAA",
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T13:13:49.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FeedBack.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\FeedBack.cs",
-              "RelativeDocumentMoniker": "Models\\FeedBack.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Models\\FeedBack.cs",
-              "RelativeToolTip": "Models\\FeedBack.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T13:03:13.654Z",
+              "WhenOpened": "2024-09-06T23:11:02.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FeedBackController.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\FeedBackController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FeedBackController.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\FeedBackController.cs",
-              "RelativeToolTip": "Controllers\\FeedBackController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwCgAAABKAAAA",
+              "Title": "paymentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\DTO\\Payment\\paymentViewModel.cs",
+              "RelativeDocumentMoniker": "DTO\\Payment\\paymentViewModel.cs",
+              "ToolTip": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\DTO\\Payment\\paymentViewModel.cs",
+              "RelativeToolTip": "DTO\\Payment\\paymentViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T13:02:11.507Z",
+              "WhenOpened": "2024-09-06T23:09:18.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAADIAAAAgAAAA",
+              "Title": "ReservationDto.cs",
+              "DocumentMoniker": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\DTO\\Reservation\\ReservationDto.cs",
+              "RelativeDocumentMoniker": "DTO\\Reservation\\ReservationDto.cs",
+              "ToolTip": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\DTO\\Reservation\\ReservationDto.cs",
+              "RelativeToolTip": "DTO\\Reservation\\ReservationDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T18:20:15.77Z",
+              "WhenOpened": "2024-09-06T23:08:56.785Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 374,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAAAsAAABAmJmZmZkdwBUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T23:06:43.64Z",
+              "EditorCaption": ""
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PayPalPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\PayPalPaymentService.cs",
+              "RelativeDocumentMoniker": "Services\\PayPalPaymentService.cs",
+              "ToolTip": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Services\\PayPalPaymentService.cs",
+              "RelativeToolTip": "Services\\PayPalPaymentService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T23:02:46.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\EL-G3brii\\source\\repos\\Hotel-Reservation-System\\Hotel_Reservation_System\\Controllers\\PaymentController.cs*",
+              "RelativeToolTip": "Controllers\\PaymentController.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T23:00:51.964Z",
+              "EditorCaption": ""
             }
           ]
         }
