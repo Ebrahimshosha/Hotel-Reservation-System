@@ -46,11 +46,11 @@ public class RoomMediator : IRoomMediator
 
         var roomToReturnDto = await _roomService.AddAsync(roomDTO);
 
-        var images = await _roomImagesServices.AddImagesRoom(roomToReturnDto.Id, createRoomDTO.Images);
-        roomToReturnDto.Images = images;
+        //var images = await _roomImagesServices.AddImagesRoom(roomToReturnDto.Id, createRoomDTO.Images);
+        //roomToReturnDto.Images = images;
 
-        var facilitiesIds = _roomFacilityService.AddRoomFacility(roomToReturnDto.Id, createRoomDTO.FacilitiesIds);
-        roomToReturnDto.FacilitiesIds = facilitiesIds;
+        //var facilitiesIds = _roomFacilityService.AddRoomFacility(roomToReturnDto.Id, createRoomDTO.FacilitiesIds);
+        //roomToReturnDto.FacilitiesIds = facilitiesIds;
 
         return roomToReturnDto;
     }

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel_Reservation_System.Controllers;
 
-[Authorize]
+//[Authorize]
 public class RoomsController : BaseApiController
 {
     private readonly IRoomMediator _mediator;
