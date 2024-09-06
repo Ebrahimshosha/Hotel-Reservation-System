@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
+    "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemmm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {}
   },
   "projects": {
-    "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {
+    "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemmm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemmm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
         "projectName": "Hotel_Reservation_System",
-        "projectPath": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
-        "packagesPath": "C:\\Users\\Ibrahim shosha\\.nuget\\packages\\",
-        "outputPath": "E:\\.Net Project\\Hotel Reservation\\Hotel-Reservation-System\\Hotel_Reservation_System\\obj\\",
+        "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemmm\\Hotel_Reservation_System\\Hotel_Reservation_System.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\Hotel-Reservation-Systemmm\\Hotel_Reservation_System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ibrahim shosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

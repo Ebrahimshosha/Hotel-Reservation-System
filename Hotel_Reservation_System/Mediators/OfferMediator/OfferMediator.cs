@@ -24,15 +24,6 @@ namespace Hotel_Reservation_System.Mediators.OfferMediator
         public async Task<OfferDTO> Add(AddOfferDto addOfferDTO)
         {
             var offer = addOfferDTO.MapOne<Offer>();
-            // Add OfferRooms based on RoomIds
-            foreach (var roomId in addOfferDTO.RoomIds)
-            {
-                offer.OfferRooms.Add(new OfferRoom
-                {
-                    RoomId = roomId,
-                    offer = offer
-                });
-            }
 
             _context.Offers.Add(offer);
             await _context.SaveChangesAsync();
@@ -40,23 +31,66 @@ namespace Hotel_Reservation_System.Mediators.OfferMediator
             return offer.MapOne<OfferDTO>();
         }
 
-        public async Task<OfferDTO> Update(int id, EditOfferDto editOfferDTO)
+        public async Task<bool> AssignRoomsToOfferAsync(int offerId, IEnumerable<int> roomIds)
         {
             var offer = await _context.Offers
                 .Include(o => o.OfferRooms)
+                .FirstOrDefaultAsync(o => o.Id == offerId);
+
+            if (offer == null)
+                return false;
+
+            foreach (var roomId in roomIds)
+            {
+                if (offer.OfferRooms.All(or => or.RoomId != roomId))
+                {
+                    offer.OfferRooms.Add(new OfferRoom
+                    {
+                        RoomId = roomId,
+                        offer = offer
+                    });
+                }
+            }
+
+            _context.Offers.Update(offer);
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<OfferDTO> Update(int id, EditOfferDto editOfferDTO)
+        {
+            var offer = await _context.Offers
                 .FirstOrDefaultAsync(o => o.Id == id);
 
             if (offer == null)
                 return null;
 
-            // Remove old Data
-            _context.offerRooms.RemoveRange(offer.OfferRooms);
+            // Map the updated data excluding OfferRooms
+            var updatedOffer = editOfferDTO.MapOne<Offer>();
+            updatedOffer.Id = id;
 
-            // Clear the memory 
+            _context.Offers.Update(updatedOffer);
+            await _context.SaveChangesAsync();
+
+            return updatedOffer.MapOne<OfferDTO>();
+        }
+
+        public async Task<bool> UpdateAssignedRoomsToOfferAsync(int offerId, IEnumerable<int> roomIds)
+        {
+            var offer = await _context.Offers
+                .Include(o => o.OfferRooms)
+                .FirstOrDefaultAsync(o => o.Id == offerId);
+
+            if (offer == null)
+                return false;
+
+            // Clear existing OfferRooms
+            _context.offerRooms.RemoveRange(offer.OfferRooms);
             offer.OfferRooms.Clear();
 
             // Add new Data
-            foreach (var roomId in editOfferDTO.RoomIds)
+            foreach (var roomId in roomIds)
             {
                 offer.OfferRooms.Add(new OfferRoom
                 {
@@ -65,10 +99,10 @@ namespace Hotel_Reservation_System.Mediators.OfferMediator
                 });
             }
 
-            // Update the offer in the database
             _context.Offers.Update(offer);
             await _context.SaveChangesAsync();
-            return offer.MapOne<OfferDTO>();
+
+            return true;
         }
 
 
@@ -85,13 +119,27 @@ namespace Hotel_Reservation_System.Mediators.OfferMediator
             // Soft delete the offer
             offer.IsDeleted = true;
 
-            // Soft delete related offer rooms
-            foreach (var offerRoom in offer.OfferRooms)
-            {
-                offerRoom.IsDeleted = true;
-            }
-
             // Update the offer in the database and save changes
+            _context.Offers.Update(offer);
+            _context.SaveChanges();
+
+            return true;
+        }
+
+        public bool DeleteAssignedRooms(int offerId)
+        {
+            var offer = _context.Offers
+                .Include(o => o.OfferRooms)
+                .FirstOrDefault(o => o.Id == offerId);
+
+            if (offer == null)
+                return false;
+
+            // Remove all related OfferRooms
+            _context.offerRooms.RemoveRange(offer.OfferRooms);
+
+            // Clear the OfferRooms collection
+            offer.OfferRooms.Clear();
             _context.Offers.Update(offer);
             _context.SaveChanges();
 

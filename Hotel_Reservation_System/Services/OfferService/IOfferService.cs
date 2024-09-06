@@ -7,8 +7,13 @@ namespace Hotel_Reservation_System.Services.OfferService
         IEnumerable<Offer> GetAll();
         Offer Get(int id);
         Task<Offer> AddAsync(AddOfferDto addOfferDTO);
-        Task<Offer> UpdateAsync(int id, AddOfferDto addOfferDTO);
+
+        Task<bool> AssignRoomsToOfferAsync(int offerId, IEnumerable<int> roomIds);
+        Task<Offer> UpdateAsync(int id, EditOfferDto editOfferDTO);
+        Task<bool> UpdateAssignedRoomsToOfferAsync(int offerId, IEnumerable<int> roomIds);
         void Delete(int id);
+
+        void DeleteAssignedRooms(int offerId);
 
     }
 

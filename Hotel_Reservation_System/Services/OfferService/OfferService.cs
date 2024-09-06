@@ -26,48 +26,51 @@ namespace Hotel_Reservation_System.Services.OfferService
 
         public async Task<Offer> AddAsync(AddOfferDto addOfferDTO)
         {
-            // Map the DTO to the Offer entity
             var offer = addOfferDTO.MapOne<Offer>();
-
-            // Handle the OfferRooms relationships based on RoomIds in the DTO
-            foreach (var roomId in addOfferDTO.RoomIds)
-            {
-                offer.OfferRooms.Add(new OfferRoom
-                {
-                    RoomId = roomId,
-                    offer = offer
-                });
-            }
-
             offer = _repository.Add(offer);
             _repository.SaveChanges();
-
             return offer;
         }
 
-        public async Task<Offer> UpdateAsync(int id, AddOfferDto addOfferDTO)
+        public async Task<bool> AssignRoomsToOfferAsync(int offerId, IEnumerable<int> roomIds)
+        {
+            // Retrieve the offer from the database
+            var offer = _repository.GetByID(offerId); // Use GetByID to fetch the offer
+            if (offer == null)
+                return false;
+
+            foreach (var roomId in roomIds)
+            {
+                // Check if the room is already assigned
+                if (offer.OfferRooms.All(or => or.RoomId != roomId))
+                {
+                    offer.OfferRooms.Add(new OfferRoom
+                    {
+                        RoomId = roomId,
+                        offer = offer
+                    });
+                }
+            }
+
+            // Update the offer with the new room assignments
+            _repository.Update(offer);
+
+            // Save changes synchronously if your repository doesn't support async save
+            _repository.SaveChanges();
+
+            return true;
+        }
+
+        public async Task<Offer> UpdateAsync(int id, EditOfferDto editOfferDTO)
         {
             var offerFromDb = _repository.GetByID(id);
-            if (offerFromDb is null)
+            if (offerFromDb == null)
             {
                 return null;
             }
 
-            // Clear existing OfferRooms
-            offerFromDb.OfferRooms.Clear();
-
-            // Handle the OfferRooms relationships based on RoomIds in the DTO
-            foreach (var roomId in addOfferDTO.RoomIds)
-            {
-                offerFromDb.OfferRooms.Add(new OfferRoom
-                {
-                    RoomId = roomId,
-                    offer = offerFromDb
-                });
-            }
-
-            // Map the updated data
-            var offer = addOfferDTO.MapOne<Offer>();
+            // Map the updated data excluding OfferRooms
+            var offer = editOfferDTO.MapOne<Offer>();
             offer.Id = id;
 
             _repository.Update(offer);
@@ -76,13 +79,59 @@ namespace Hotel_Reservation_System.Services.OfferService
             return offer;
         }
 
+        public async Task<bool> UpdateAssignedRoomsToOfferAsync(int offerId, IEnumerable<int> roomIds)
+        {
+            var offer = _repository.GetByID(offerId);
+            if (offer == null)
+            {
+                return false;
+            }
+
+            // Clear existing OfferRooms
+            offer.OfferRooms.Clear();
+
+            // Handle the OfferRooms relationships based on RoomIds in the DTO
+            foreach (var roomId in roomIds)
+            {
+                offer.OfferRooms.Add(new OfferRoom
+                {
+                    RoomId = roomId,
+                    offer = offer
+                });
+            }
+
+            // Update the offer with the new room assignments
+            _repository.Update(offer);
+            _repository.SaveChanges();
+
+            return true;
+        }
+
         public void Delete(int id)
         {
             var offer = _repository.GetByID(id);
 
-            if (offer is not null)
+            if (offer != null)
             {
                 _repository.Delete(id);
+                _repository.SaveChanges();
+            }
+        }
+
+        public void DeleteAssignedRooms(int offerId)
+        {
+            var offer = _repository.GetByID(offerId);
+
+            if (offer != null)
+            {
+                // Remove all related OfferRooms
+                foreach (var offerRoom in offer.OfferRooms.ToList())
+                {
+                    _repository.Delete(offerRoom.Id);
+                }
+
+                offer.OfferRooms.Clear();
+                _repository.Update(offer);
                 _repository.SaveChanges();
             }
         }
