@@ -1,6 +1,8 @@
-﻿using Hotel_Reservation_System.Profiles.OfferProfile;
+﻿using Hotel_Reservation_System.Profiles.Auth;
+using Hotel_Reservation_System.Profiles.OfferProfile;
 using Hotel_Reservation_System.Profiles.Roomprofiles;
 using Hotel_Reservation_System.Services.Authorization;
+using Hotel_Reservation_System.Services.Role;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -43,6 +45,7 @@ public static class DependencyInjection
         services.AddMapperConfig();
 
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IRoleService, RoleService>();
 
         return services;
     }
@@ -58,6 +61,7 @@ public static class DependencyInjection
     {
         services.AddAutoMapper(typeof(RoomProfile));
         services.AddAutoMapper(typeof(OfferProfile));
+        services.AddAutoMapper(typeof(MappingProfileRole));
 
         return services;
     }
